@@ -27,10 +27,12 @@ class HeaderTop extends Component {
             <i class="fa fa-heart"></i> My Wishlist
           </li>
           <li className="LinkStyle">
-            <i class="fa fa-cart-plus"></i> Cart
+            <i class="fas fa-shopping-cart"></i> Cart
           </li>
           {/* <Link to={Login} ></Link> */}
-          <li className="LinkStyle"> My Account </li>
+          <li className="LinkStyle">
+            <i className="fas fa-user-circle"></i> My Account
+          </li>
         </ul>
       </nav>
     );
