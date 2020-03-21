@@ -2,35 +2,45 @@ import React, { Component } from "react";
 import "../acoounts.css";
 import Logo2 from "../../logoComponents/logo2";
 import SelectCountry from "../../formComponents/selectCountry";
-import InputText from "../../formComponents/inputText";
-import InputEmail from "../../formComponents/InputEmail";
-import InputPhone from "../../formComponents/InputPhone";
-import InputPassword from "../../formComponents/inputPassword";
-import GreenButton from "../../formComponents/buttonGreen";
+
 class RegisterUser extends Component {
   render() {
     return (
-        <div class="userReg">
-          <Logo2 />
-          <p class="regH">Individual Account Registration</p>
+      <div class="userReg">
+        <Logo2 />
+        <p class="regH">Buyer Account Registration</p>
 
-          <form>
-            <InputText id="" placeholder="FirstName" />
-            <InputText id="" placeholder="LastName" />
+        <form>
+          <div class="formgroup">
+            <input type="text" placeholder="First Name" />
+          </div>
+          <div class="formgroup">
+            <input type="text" placeholder="Last Name" />
+          </div>
 
-            <SelectCountry />
-            <InputEmail id="" placeholder="" />
-            <InputPhone id="" placeholder="XXX-XXXX-XXXX" />
-            <InputPassword id="" placeholder="Enter Preffered Passowrd" />
-            <InputPassword id="" placeholder="Retype Password" />
-            <GreenButton>Register</GreenButton>
-            <div class="register">
-              <p>
-                By Sign Up, you agree to our <span>Terms and conditions</span>
-              </p>
-            </div>
-          </form>
-        </div>
+          <SelectCountry />
+          <div class="formgroup">
+            <input type="email" placeholder="Example@email.com" />
+          </div>
+          <div class="formgroup">
+            <input type="tel" placeholder="XXX-XXXX-XXXX" />
+          </div>
+          <div class="formgroup">
+            <input type="password" placeholder="Enter Preffered Password" />
+          </div>
+          <div class="formgroup">
+            <input type="password" placeholder="Retype Preffered Password" />
+          </div>
+          <div className="formgroup">
+            <button className="signinbtnG">Register</button>
+          </div>
+          <div class="register">
+            <p>
+              By Sign Up, you agree to our <span>Terms and conditions</span>
+            </p>
+          </div>
+        </form>
+      </div>
     );
   }
 }
