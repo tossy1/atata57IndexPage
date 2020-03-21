@@ -30,7 +30,7 @@ class App extends Component {
             path="/IndividualRegistration"
             component={RegisterUser}
           />
-
+          <Route exact path="/Register" component={Register} />
           <Route component={NotFound} />
         </Switch>
       </Router>

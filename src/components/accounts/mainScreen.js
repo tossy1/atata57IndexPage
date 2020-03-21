@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./acoounts.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Logo2 from "../logoComponents/logo2";
 
 class MainScreen extends Component {
@@ -16,7 +16,9 @@ class MainScreen extends Component {
               <li>Sign In</li>
             </Link>
             <span>| </span>
-            <li>Register</li>
+            <Link to="/Register">
+              <li>Register</li>
+            </Link>
           </ul>
         </div>
         <hr />
