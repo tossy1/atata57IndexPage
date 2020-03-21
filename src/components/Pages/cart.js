@@ -1,4 +1,4 @@
-import React from "react";
+import React, { component } from "react";
 import "./cart.css";
 
 class Cart extends component {
@@ -6,3 +6,5 @@ class Cart extends component {
     return <div></div>;
   }
 }
+
+export default Cart;
