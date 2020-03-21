@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class HeaderTop extends Component {
   render() {
@@ -22,14 +22,18 @@ class HeaderTop extends Component {
           </li>
         </ul>
         <ul class="rightMenu">
+          <Link to="/wishlist" className="LinkStyle">
           <li className="LinkStyle">
             <i class="fa fa-heart"></i> My Wishlist
           </li>
-          <li className="LinkStyle">
+            </Link>
+          <Link to="/cart" className="LinkStyle">
+          <li>
             <i class="fas fa-shopping-cart"></i> Cart
           </li>
-          <Link to="/MyAccount">
-            <li className="LinkStyle">
+            </Link>
+          <Link to="/MyAccount" className="LinkStyle">
+            <li>
               <i className="fas fa-user-circle"></i> My Account
             </li>
           </Link>

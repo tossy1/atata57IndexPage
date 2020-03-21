@@ -7,7 +7,7 @@ class HeaderBottom extends Component {
         <nav class="headerBottom">
         <ul class="leftMenu">
             <li>
-               All Categories 
+            All Categories <i class="fas fa-bars"></i>
             </li>
             <li>Clothings</li>
             <li>Electronics</li>
