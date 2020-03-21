@@ -24,7 +24,7 @@ class MainScreen extends Component {
         <hr />
         <div className="socialLinks">
           <a href="https://web.facebook.com/atata57">
-            <i className="fas fa-building"></i>
+            <i className="fab fa-facebook-square"></i>
           </a>
           <a href="https://twitter.com/atata57">
             <i className="fab fa-twitter-square"></i>
