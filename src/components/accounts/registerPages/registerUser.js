@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import "../accounts/acoounts.css";
-import Modal from "../formComponents/modal";
-import Logo2 from "../logoComponents/logo2";
+import "../acoounts.css";
+import Logo2 from "../../logoComponents/logo2";
 import SelectCountry from "../../formComponents/selectCountry";
 import InputText from "../../formComponents/inputText";
 import InputEmail from "../../formComponents/InputEmail";
 import InputPhone from "../../formComponents/InputPhone";
 import InputPassword from "../../formComponents/inputPassword";
 import GreenButton from "../../formComponents/buttonGreen";
-class Register extends Component {
+class RegisterUser extends Component {
   render() {
     return (
-      <Modal>
         <div class="userReg">
           <Logo2 />
           <p class="regH">Individual Account Registration</p>
@@ -33,9 +31,8 @@ class Register extends Component {
             </div>
           </form>
         </div>
-      </Modal>
     );
   }
 }
 
-export default Register;
+export default RegisterUser;

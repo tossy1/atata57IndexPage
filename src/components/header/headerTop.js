@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
-// import Login from '../Accounts/Login';
-// import { Link } from 'react-router-dom';
+import { Link} from "react-router-dom";
 
 class HeaderTop extends Component {
   render() {
@@ -29,10 +28,11 @@ class HeaderTop extends Component {
           <li className="LinkStyle">
             <i class="fas fa-shopping-cart"></i> Cart
           </li>
-          {/* <Link to={Login} ></Link> */}
-          <li className="LinkStyle">
-            <i className="fas fa-user-circle"></i> My Account
-          </li>
+          <Link to="/MyAccount">
+            <li className="LinkStyle">
+              <i className="fas fa-user-circle"></i> My Account
+            </li>
+          </Link>
         </ul>
       </nav>
     );
