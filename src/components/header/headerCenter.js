@@ -22,7 +22,7 @@ class HeaderCenter extends Component {
                 </select>
                 <input type="search" name="searchColumn" id="searchColumn" placeholder="Enter Items to search" />
                 <button id="searchButton">
-                    <i class="fa fa-search"></i>
+                    <i class="fas fa-search"></i>
                 </button>
             </nav>
             <nav class="contact">
