@@ -3,22 +3,22 @@ import "./cart.css";
 
 function Cart() {
   return (
-    <div class="container" id="container">
-      <div class="cart">
+    <div className="cartContainer" id="cartContainer">
+      <div className="cart">
         <ul>
-          <li class="item">
-            <div class="image">
+          <li className="item">
+            <div className="image">
               <img src="/item.jpg" alt="Item" />
             </div>
-            <div class="itemDetails" id="itemDetails"></div>
+            <div className="itemDetails" id="itemDetails"></div>
           </li>
         </ul>
       </div>
-      <div class="checkOut">
-        <h2 id="header">Summary</h2>
+      <div className="checkOut">
+        <h2 id="Header">Summary</h2>
         <ul>
           <li>
-            <p class="title">Total Price</p>
+            <p className="title">Total Price</p>
             <p class="amount">
               $<span id="totalAmount">40000</span>
             </p>
@@ -48,7 +48,13 @@ function Cart() {
         </ul>
         <button id="checkoutBtn">Checkout</button>
       </div>
-    </div>
+    </div>    
   );
 }
+
+
+
+
+ 
+
 export default Cart;
