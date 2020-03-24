@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+}
+
+.cart {
+  width: 50rem;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #ffffff;
+  -webkit-box-shadow: -5px -1px 10px #00000031;
+
+  ul {
+    list-style-type: none;
+    margin: 10px auto;
+  }
+}
+
+.checkOut {
+  width: 22rem;
+  -ms-grid-column: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #ffffff;
+  -webkit-box-shadow: -5px 10px 10px #00000031;
+  box-shadow: -5px 10px 10px #00000031;
+  padding: 10px;
+  background-color: #e4e4e4;
+  color: #fff;
+  #Header {
+    font-family: "DM Sans", sans-serif;
+    padding: 20px 0;
+  }
+
+  .checkOut ul {
+    list-style-type: none;
+    font-size: 17px;
+    display: inline;
+    color: #2b2b2b;
+    li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 20px;
+    }
+  }
+}
+
+.title {
+  font-family: "Pragati Narrow", sans-serif;
+}
+
+.amount {
+  font-family: "Pragati Narrow", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  right: 4rem;
+}
+
+input {
+  padding: 15px;
+  position: absolute;
+  right: 4rem;
+  width: 65px;
+  margin-top: -15px;
+  border: none;
+  outline: none;
+  font-family: "Pragati Narrow", sans-serif;
+  font-weight: 600;
+}
+
+button {
+  width: 98%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff0909),
+    to(#971d1d)
+  );
+  background: linear-gradient(to right, #ff0909, #971d1d);
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  :hover {
+    -webkit-box-shadow: 4px 6px 5px #ff090993;
+    box-shadow: 4px 6px 5px #ff090993;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+.totalLabel {
+  font-family: "Pragati Narrow", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  right: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

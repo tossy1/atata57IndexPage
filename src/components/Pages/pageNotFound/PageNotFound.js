@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import show from "./undraw_file_searching_duff.svg";
+// import show from "./undraw_file_searching_duff.svg";
 import "./pageNotFound.css";
 
 class NotFound extends Component {
@@ -8,7 +8,7 @@ class NotFound extends Component {
       <div className="container">
         <h2>404 </h2>
         <p>Page not found</p>
-        <img src={show} />
+        {/* <img src={show} /> */}
       </div>
     );
   }
