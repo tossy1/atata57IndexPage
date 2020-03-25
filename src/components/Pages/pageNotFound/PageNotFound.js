@@ -7,7 +7,7 @@ class NotFound extends Component {
     return (
       <div className="container">
         <h2>404 </h2>
-        <p>Page not found</p>
+        <p Id="thisText">Page not found</p>
         {/* <img src={show} /> */}
       </div>
     );

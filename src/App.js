@@ -6,7 +6,7 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 //Pages//
 
 import Page from "../src/components/Pages/MainPage";
