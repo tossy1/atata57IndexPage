@@ -132,3 +132,9 @@ $color-green: #0e8502;
     font-size: 20px;
   }
 }
+a {
+  text-decoration: none;
+  :hover {
+    text-decoration: none;
+  }
+}

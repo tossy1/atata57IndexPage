@@ -1,5 +1,6 @@
 $color-light-black: #2b2b2b;
 $color-faded: #9b9a9a;
+$color-green: #0e8502;
 
 * {
   margin: 0;
@@ -8,6 +9,7 @@ $color-faded: #9b9a9a;
 
 .container-fluid {
   background-color: #f0f0f0;
+  height: 100%;
 }
 .container {
   background-color: #ffffff;
@@ -18,16 +20,14 @@ $color-faded: #9b9a9a;
   padding: 15px;
   border: none;
   border-radius: 0;
-  border-top: 0.5px solid $color-faded;
-  border-bottom: 0.5px solid $color-faded;
   select {
     width: 50px;
     margin: 25%;
     text-align: left;
   }
   .price {
-    margin: 25%;
-    font-size: 20px;
+    margin: 28%;
+    font-size: 18px;
   }
   button {
     margin: 25%;
@@ -50,9 +50,38 @@ $color-faded: #9b9a9a;
   font-size: 14px;
   color: $color-faded;
 }
+.discount {
+  width: 100%;
+  margin: auto;
+}
 .input-group {
+  width: 50%;
+  outline: none;
   input {
-    width: 30%;
+    padding: 20px;  
+  }
+  button {
+    background-color: $color-green;
+    border: none;
+  }
+}
+.PriceSum {
+  margin: auto;
+  width: 70%;
+  list-style-type: none;
+  color: $color-light-black;
+  text-align: left;
+
+  li {
+    margin: 12px;
+  }
+  .Tamount {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  button {
+    margin: auto;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
