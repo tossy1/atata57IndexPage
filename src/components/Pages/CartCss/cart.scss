@@ -6,20 +6,21 @@ $color-green: #0e8502;
   margin: 0;
   padding: 0;
 }
-
-.container-fluid {
-  background-color: #f0f0f0;
-  height: 100%;
+.contain {
+  width: 100%;
+  margin: auto;
 }
-.container {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.list-group-item {
+.list-group {
   padding: 15px;
-  border: none;
-  border-radius: 0;
+  margin: auto;
+  width: 100%;
+  .list-group-item {
+    width: 100%;
+    border: none;
+  }
+  .list-group-item:hover {
+    box-shadow: 5px 5px 10px #9b9a9aa4;
+  }
   select {
     width: 50px;
     margin: 25%;
@@ -58,7 +59,7 @@ $color-green: #0e8502;
   width: 50%;
   outline: none;
   input {
-    padding: 20px;  
+    padding: 20px;
   }
   button {
     background-color: $color-green;

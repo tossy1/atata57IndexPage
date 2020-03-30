@@ -12,7 +12,7 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <Navbar>
         <Button
           className="MenuBtn"
@@ -81,7 +81,7 @@ function Header() {
           </div>
         </Collapse>
       </div>
-    </div>
+    </>
   );
 }
 

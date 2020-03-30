@@ -3,34 +3,39 @@
   padding: 0;
 }
 
-.container-fluid {
-  background-color: #f0f0f0;
-  height: 100%;
+.contain {
+  width: 100%;
+  margin: auto;
 }
 
-.container {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.list-group-item {
+.list-group {
   padding: 15px;
-  border: none;
-  border-radius: 0;
+  margin: auto;
+  width: 100%;
 }
 
-.list-group-item select {
+.list-group .list-group-item {
+  width: 100%;
+  border: none;
+}
+
+.list-group .list-group-item:hover {
+  -webkit-box-shadow: 5px 5px 10px #9b9a9aa4;
+          box-shadow: 5px 5px 10px #9b9a9aa4;
+}
+
+.list-group select {
   width: 50px;
   margin: 25%;
   text-align: left;
 }
 
-.list-group-item .price {
+.list-group .price {
   margin: 28%;
   font-size: 18px;
 }
 
-.list-group-item button {
+.list-group button {
   margin: 25%;
 }
 

@@ -44,8 +44,9 @@
 }
 
 .container-fluid {
-  background-color: #1111119f;
+  background-color: #bbbbbb57;
   color: #fff;
+  margin-top: 5rem;
   position: absolute;
   width: 100%;
 }
