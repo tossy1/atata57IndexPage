@@ -253,4 +253,22 @@ nav .MenuBtn.btn.btn-primary:active {
   color: #525252;
   font-size: 0.8rem;
 }
+
+@media screen and (max-width: 980px) {
+  nav img {
+    margin-left: 8rem;
+  }
+  nav .sts {
+  margin: 1rem 5%;
+  width: 30%;
+  border: solid 1px #2b2b2b;
+  padding: 0;
+}
+  .Menu {
+    width: 100%;
+  }
+  .Menu a button.btn-outline-danger {
+    margin: 0 50%;
+  }
+}
 /*# sourceMappingURL=header.css.map */

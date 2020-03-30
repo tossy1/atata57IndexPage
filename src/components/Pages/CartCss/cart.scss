@@ -35,10 +35,9 @@ $color-green: #0e8502;
   }
 }
 .img-thumbnail {
-  margin: 0;
+  margin: 25% auto;
   border: none;
-  width: 100%;
-  height: 90%;
+  height: 70%;
 }
 .itemDetails {
   padding: 5px;
@@ -84,5 +83,21 @@ $color-green: #0e8502;
     margin: auto;
     width: 100%;
   }
+}
+@media screen and (max-width: 980px) {
+  .list-group {
+    padding: 5px;
+  }
+  .img-thumbnail {
+    margin: 70% auto;
+    height: 40%;
+  }
+  #ItemName {
+  font-size: 20px;
+  margin-bottom: -1px;
+}
+  .itemDetails {
+  padding: 0px;
+}
 }
 /*# sourceMappingURL=style.css.map */
