@@ -237,8 +237,8 @@ nav .MenuBtn.btn.btn-primary:active {
   border: solid 1px #ff0000;
   color: #ff0000;
   border-radius: 0px;
-  width: 50%;
-  margin: auto;
+  width: 80%;
+  margin: 0 50%;
 }
 .Menu a button.btn-outline-danger:hover {
   background-color: #ff0000;
