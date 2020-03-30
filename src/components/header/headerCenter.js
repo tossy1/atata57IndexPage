@@ -7,10 +7,10 @@ class HeaderCenter extends Component {
   render() {
     return (
       <div class="headerCenter">
-        <nav class="logo">
+        <div class="logo">
           <HeaderLogo />
-        </nav>
-        <nav class="search" id="search">
+        </div>
+        <div class="search" id="search">
           <select name="categories" id="headerCategories">
             <option value="AllCategories">All categories</option>
             <option value="Mens">Mens</option>
@@ -29,7 +29,7 @@ class HeaderCenter extends Component {
           <button id="searchButton">
             <i class="fas fa-search"></i>
           </button>
-        </nav>
+        </div>
       </div>
     );
   }

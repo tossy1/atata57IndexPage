@@ -63,8 +63,8 @@
   color: #000000;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .headerCenter .logo {
@@ -122,7 +122,7 @@
 
 .headerBottom {
   -webkit-box-shadow: 2px 2px 5px #0000002c;
-          box-shadow: 2px 2px 5px #0000002c;
+  box-shadow: 2px 2px 5px #0000002c;
   padding: 15px;
 }
 
@@ -144,7 +144,7 @@
   background-color: #2b2b2b;
   color: #fff;
   -webkit-box-shadow: 0px 5px 20px #00000048;
-          box-shadow: 0px 5px 20px #00000048;
+  box-shadow: 0px 5px 20px #00000048;
 }
 
 .headerBottom i {
@@ -158,5 +158,98 @@ a {
 
 a :hover {
   text-decoration: none;
+}
+
+nav {
+  background-color: #1c1c1c;
+}
+
+nav img {
+  width: 5rem;
+  margin-left: 28rem;
+}
+
+nav .sts {
+  margin-left: 20%;
+  width: 30%;
+  border: solid 1px #2b2b2b;
+  padding: 0;
+}
+
+nav .sts input {
+  background-color: transparent;
+  border: none;
+  outline: 0px;
+}
+
+nav .sts input:active,
+nav .sts input:focus {
+  outline: 0;
+}
+
+nav .sts button {
+  background-color: transparent;
+  color: #2b2b2b;
+  border: transparent;
+  border-radius: 0;
+  margin-right: 0px;
+}
+nav .MenuBtn.btn.btn-primary {
+  background-color: transparent;
+  color: #ff0000;
+  border: transparent;
+  border-radius: 0;
+  margin-right: 0px;
+  font-size: 1.5rem;
+}
+nav .sts button:hover,
+nav .sts button:focus,
+nav .sts button:active {
+  background-color: #2b2b2b;
+  color: #fff;
+  outline: 0px;
+}
+
+nav .MenuBtn.btn.btn-primary:hover,
+nav .MenuBtn.btn.btn-primary:focus,
+nav .MenuBtn.btn.btn-primary:active {
+  background-color: #2b2b2b;
+  color: #fff;
+  outline: 0px;
+}
+.Menu {
+  width: 20%;
+  margin-left: 1rem;
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  background-color: #2b2b2b;
+}
+.Menu .list-group-item {
+  border: none;
+  text-align: center;
+  background-color: #2b2b2b;
+}
+.Menu i,
+.Menu .fa-instagram {
+  color: #fff;
+}
+.Menu a button.btn-outline-danger {
+  border: solid 1px #ff0000;
+  color: #ff0000;
+  border-radius: 0px;
+  width: 50%;
+  margin: auto;
+}
+.Menu a button.btn-outline-danger:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 0px;
+}
+.socials {
+  margin: auto;
+}
+.faded {
+  color: #525252;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=header.css.map */

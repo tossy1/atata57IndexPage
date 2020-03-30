@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../accounts/acoounts.css";
+import "../accounts/account.css";
 import { Link } from "react-router-dom";
 import Logo2 from "../logoComponents/logo2";
 import InputText from "../formComponents/inputText";
@@ -22,10 +22,9 @@ class Login extends Component {
         <div className="register">
           <p>
             Don't have an account?{" "}
-            
-              <Link to="/Register">
-                <span>Register</span>
-              </Link>
+            <Link to="/Register">
+              <span>Register</span>
+            </Link>
           </p>
         </div>
       </div>

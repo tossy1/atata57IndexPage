@@ -1,12 +1,11 @@
 import React from "react";
 import "../../App.css";
-
-import Header from "../header/header";
+import MainHeader from "../header/mainHeader";
 
 const Page = () => {
   return (
     <div>
-      <Header />
+      <MainHeader />
     </div>
   );
 };

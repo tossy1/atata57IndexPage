@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
-import './header.css';
+import React, { Component } from "react";
+import "./header.css";
 
 class HeaderBottom extends Component {
   render() {
     return (
-        <nav class="headerBottom">
+      <div class="headerBottom">
         <ul class="leftMenu">
-            <li>
+          <li>
             All Categories <i class="fas fa-bars"></i>
-            </li>
-            <li>Clothings</li>
-            <li>Electronics</li>
-            <li>Fashion</li>
-            <li>Home and Kitchen</li>
-            <li>Drinks</li>
-            <li>Mens</li>
-            <li>Women</li>
+          </li>
+          <li>Clothings</li>
+          <li>Electronics</li>
+          <li>Fashion</li>
+          <li>Home and Kitchen</li>
+          <li>Drinks</li>
+          <li>Mens</li>
+          <li>Women</li>
         </ul>
-    </nav>
-        
+      </div>
     );
   }
 }

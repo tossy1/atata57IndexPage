@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./acoounts.css";
+import "./account.css";
 import { Link } from "react-router-dom";
 import Logo2 from "../logoComponents/logo2";
 
