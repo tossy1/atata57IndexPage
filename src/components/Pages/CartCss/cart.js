@@ -100,7 +100,7 @@ function Cart() {
               </ListGroup>
             </Col>
             <Col xs={6} md={4}>
-              <InputGroup className="PriceSum mt-5 mb-5">
+              <InputGroup className="PriceSum mr-5 ml-5 mt-5 mb-5">
                 <Col xs={12} md={12}>
                   <Row>
                     <Col xs={6} md={6}>
@@ -129,7 +129,9 @@ function Cart() {
                   </Row>
                   <Row>
                     <Col xs={12} md={12}>
-                      <Button variant="danger" className=" mt-3 mb-2">Proceed To Checkout</Button>
+                      <Button variant="danger" className=" mt-3 mb-2">
+                        Proceed To Checkout
+                      </Button>
                     </Col>
                   </Row>
                 </Col>
