@@ -66,3 +66,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Form Components
+
+All Form Components Takes in a Props(argument) Placeholder for Inputs and text for buttons, to use e.g <InputBtn placehoder="Enter your Value" >

@@ -8,6 +8,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Img1 from "./1.png";
 import Img2 from "./2.png";
 import Img3 from "./4.png";
+import GreenButton from "../../formComponents/buttonGreen";
 import ListGroupItem from "react-bootstrap/ListGroupItem";
 import Form from "react-bootstrap/form";
 import Button from "react-bootstrap/Button";
@@ -129,9 +130,7 @@ function Cart() {
                   </Row>
                   <Row>
                     <Col xs={12} md={12}>
-                      <Button variant="danger" className=" mt-3 mb-2">
-                        Proceed To Checkout
-                      </Button>
+                      <GreenButton text="Proceed to payment" />
                     </Col>
                   </Row>
                 </Col>

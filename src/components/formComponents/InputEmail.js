@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import "../accounts/acoounts.css";
 
-class InputEmail extends Component {
-  render() {
+function InputEmail(inputEmail){
     return (
       <div class="formgroup">
-        <input type="email" name="" />
+        <input type="email" placeholder={inputEmail.placeholder} />
       </div>
     );
   }
-}
-
 export default InputEmail;

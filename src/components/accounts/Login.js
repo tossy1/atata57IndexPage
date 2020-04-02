@@ -14,10 +14,8 @@ class Login extends Component {
 
         <form>
           <InputText id="" placeholder="Email/Username" />
-          <InputSigninPass id="" placeholder="Password" />
-          <div className="formgroup">
-            <button className="signinbtnG">SIGN IN</button>
-          </div>
+          <InputSigninPass placeholder="Password" />
+          <GreenButton text="Sign In" />
         </form>
         <div className="register">
           <p>

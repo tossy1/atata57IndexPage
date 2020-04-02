@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "../accounts/acoounts.css";
 
-class GreenButton extends Component {
-  render() {
-    return (
+function GreenButton(greenButton){
+     return (
       <div className="formgroup">
-        <button className="signinbtnG"></button>
+        <button className="signinbtnG">{greenButton.text}</button>
       </div>
     );
   }
-}
-
 export default GreenButton;

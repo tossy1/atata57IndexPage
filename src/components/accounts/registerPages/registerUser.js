@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "../acoounts.css";
 import Logo2 from "../../logoComponents/logo2";
+import InputText from "../../formComponents/inputText";
+import InputEmail from "../../formComponents/InputEmail";
+import InputPhone from "../../formComponents/InputPhone";
+import InputPassword from "../../formComponents/inputPassword";
+import GreenButton from "../../formComponents/buttonGreen";
 import SelectCountry from "../../formComponents/selectCountry";
 
 class RegisterUser extends Component {
@@ -11,29 +16,15 @@ class RegisterUser extends Component {
         <p class="regH">Buyer Account Registration</p>
 
         <form>
-          <div class="formgroup">
-            <input type="text" placeholder="First Name" />
-          </div>
-          <div class="formgroup">
-            <input type="text" placeholder="Last Name" />
-          </div>
-
+          <InputText placeholder="First Name" />
+          <InputText placeholder="Last Name" />
           <SelectCountry />
-          <div class="formgroup">
-            <input type="email" placeholder="Example@email.com" />
-          </div>
-          <div class="formgroup">
-            <input type="tel" placeholder="XXX-XXXX-XXXX" />
-          </div>
-          <div class="formgroup">
-            <input type="password" placeholder="Enter Preffered Password" />
-          </div>
-          <div class="formgroup">
-            <input type="password" placeholder="Retype Preffered Password" />
-          </div>
-          <div className="formgroup">
-            <button className="signinbtnG">Register</button>
-          </div>
+          <InputEmail placeholder="Example@example.com" />
+          <InputPhone placeholder="XXX-XXXX-XXXX" />
+          <InputPassword placeholder="Enter Preffered password" />
+
+          <InputPassword placeholder="Retype password" />
+          <GreenButton text="Register" />
           <div class="register">
             <p>
               By Sign Up, you agree to our <span>Terms and conditions</span>
