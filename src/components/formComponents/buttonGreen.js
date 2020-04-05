@@ -1,10 +1,10 @@
 import React from "react";
 import "../accounts/acoounts.css";
 
-function GreenButton(greenButton){
+function GreenButton(props){
      return (
       <div className="formgroup">
-        <button className="signinbtnG">{greenButton.text}</button>
+        <button className="signinbtnG">{props.text}</button>
       </div>
     );
   }

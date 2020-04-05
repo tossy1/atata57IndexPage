@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../accounts/acoounts.css";
 
-function InputEmail(inputEmail){
+function InputEmail(props){
     return (
       <div class="formgroup">
-        <input type="email" placeholder={inputEmail.placeholder} />
+        <input type="email" placeholder={props.placeholder} />
       </div>
     );
   }

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../accounts/acoounts.css";
 
-function InputPhone(inputPhone) {
+function InputPhone(props) {
     return (
       <div class="formgroup">
-        <input type="tel" placeholder={inputPhone.placeholder} />
+        <input type="tel" placeholder={props.placeholder} />
       </div>
     );
   }

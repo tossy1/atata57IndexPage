@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../accounts/acoounts.css";
 
-function InputPassword(inputPassword) {
+function InputPassword(props) {
   return (
     <div class="formgroup">
-      <input type="password" placeholder={inputPassword.placeholder} />
+      <input type="password" placeholder={props.placeholder} />
     </div>
   );
 }

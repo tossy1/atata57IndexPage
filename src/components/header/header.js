@@ -49,34 +49,62 @@ function Header() {
         <Collapse in={open}>
           <div id="menu">
             <ListGroup>
-              <ListGroup.Item className=" mb-2">About</ListGroup.Item>
-              <ListGroup.Item className=" mb-2">Shop</ListGroup.Item>
-              <ListGroup.Item className=" mb-2">Services</ListGroup.Item>
-              <ListGroup.Item className=" mb-2">Help</ListGroup.Item>
+              <ListGroup.Item className="BlackDropdown mb-2">
+                About
+              </ListGroup.Item>
+              <ListGroup.Item className=" BlackDropdown mb-2">
+                Shop
+              </ListGroup.Item>
+              <ListGroup.Item className=" BlackDropdown mb-2">
+                Request Quotation
+              </ListGroup.Item>
+              <ListGroup.Item className=" BlackDropdown mb-2">
+                Services
+              </ListGroup.Item>
+              <ListGroup.Item className=" BlackDropdown mb-2">
+                Help
+              </ListGroup.Item>
+
               <Link to="/Signin">
-                <Button variant="outline-danger" className="ml-4 mb-2 ">
-                  Login
-                </Button>
+                <ListGroup.Item>
+                  <Button variant="outline-danger" className="mb-2 ">
+                    Login
+                  </Button>
+                </ListGroup.Item>
               </Link>
 
-              <ListGroup horizontal className="socials">
-                <ListGroup.Item>
+              <ListGroup
+                horizontal
+                className="socials"
+                style={{ marginTop: "-20px", marginLeft: "-10px" }}
+              >
+                <ListGroup.Item className="social">
                   <i class="fab fa-facebook-f"></i>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item className="social">
                   <i class="fab fa-twitter"></i>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item className="social">
                   <i class="fab fa-instagram"></i>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item className="social">
                   <i class="fab fa-linkedin-in"></i>
                 </ListGroup.Item>
               </ListGroup>
-            </ListGroup>
-            <ListGroup className="faded">
-              <ListGroup.Item>Terms Of Services</ListGroup.Item>
-              <ListGroup.Item>Privacy Policy</ListGroup.Item>
+
+              <ListGroup
+                className="faded"
+                style={{
+                  marginTop: "-20px"
+                }}
+              >
+                <ListGroup.Item className="BlackDropdown">
+                  Terms Of Services
+                </ListGroup.Item>
+                <ListGroup.Item className="BlackDropdown">
+                  Privacy Policy
+                </ListGroup.Item>
+              </ListGroup>
             </ListGroup>
           </div>
         </Collapse>

@@ -19,10 +19,6 @@
   border: none;
 }
 
-.list-group .list-group-item:hover {
-  -webkit-box-shadow: 5px 5px 10px #9b9a9aa4;
-          box-shadow: 5px 5px 10px #9b9a9aa4;
-}
 
 .list-group select {
   width: 50px;
@@ -100,20 +96,4 @@
   width: 100%;
 }
 
-@media screen and (max-width: 980px) {
-  .list-group {
-    padding: 5px;
-  }
-  .img-thumbnail {
-    margin: 70% auto;
-    height: 40%;
-  }
-  #ItemName {
-    font-size: 20px;
-    margin-bottom: -1px;
-  }
-  .itemDetails {
-    padding: 0px;
-  }
-}
 /*# sourceMappingURL=cart.css.map */
