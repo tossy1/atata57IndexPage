@@ -1,17 +1,12 @@
-import React from 'react';
+import React from "react";
+import Header from "../header/header";
 
-
-function RFQ{
-    return(
-        <>
-
-<h3>Hello!</h3>
-
-        </>
-
-
-    )
-    
+function RFQ() {
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default RFQ;
