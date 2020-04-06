@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import Login from "../accounts/Login";
+import Modal from "react-bootstrap/Modal";
 
 function HeaderTop() {
+  const [show, setShow] = useState(false);
+
   return (
     <nav class="headerTop">
       <ul class="leftMenu">
@@ -31,10 +35,18 @@ function HeaderTop() {
             <i class="fas fa-shopping-cart"></i> Cart
           </li>
         </Link>
-        <Link to="/MyAccount" className="LinkStyle">
+        <Link className="LinkStyle" onClick={() => setShow(true)}>
           <li>
             <i className="fas fa-user-circle"></i> My Account
           </li>
+          <Modal
+            show={show}
+            onHide={() => setShow(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Login />
+          </Modal>
         </Link>
         <Link to="/RFQ" className="LinkStyle">
           <li>

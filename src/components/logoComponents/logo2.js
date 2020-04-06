@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import logo2 from "./logo2.png";
 
-class Logo2 extends Component {
-  render() {
-    return <img src={logo2} alt="Logo" />;
-  }
+function Logo2(props) {
+    return(
+      <img src={logo2} alt="Logo" style={{ margin: "auto", width:"15%" }} />
+    )
 }
 
 export default Logo2;

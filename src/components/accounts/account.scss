@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.overflow {
-  overflow: hidden;
-}
-.container {
-  width: 70%;
-  margin: auto;
-}
 #btn {
   margin: auto;
   margin-left: 35%;
@@ -139,9 +132,8 @@ form {
 .signin,
 .registerMain,
 .userReg {
-  width: 50%;
-  margin: auto;
-  margin-top: 10px;
+  width: 150%;
+  margin-left: -25%;
   padding: 30px;
   background-image: url("../formComponents/bgImg.png");
   font-family: "Baloo Da 2", cursive;
@@ -174,7 +166,7 @@ form {
 }
 .signin input,
 .userReg input {
-  width: 90%;
+  width: 100%;
   padding: 15px;
   border: none;
   outline: none;
@@ -191,7 +183,7 @@ form {
   box-shadow: 4px 6px 5px#46464636;
 }
 .signinbtnG {
-  width: 98%;
+  width: 100%;
   padding: 15px;
   outline: none;
   border: none;
@@ -226,6 +218,7 @@ form {
 }
 .register {
   color: #3f3e3e;
+  margin-top: -5%;
   text-align: center;
 }
 .register span {

@@ -1,10 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import headerLogo from "./headerLogo.png";
 
-class HeaderLogo extends Component {
-  render() {
+function HeaderLogo()  {
     return <img src={headerLogo} alt="Logo" />;
   }
-}
-
 export default HeaderLogo;

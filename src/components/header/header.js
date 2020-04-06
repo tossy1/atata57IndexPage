@@ -1,18 +1,30 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
 import ListGroup from "react-bootstrap/ListGroup";
 import HeaderLogo from "../logoComponents/headerLogo";
 import Collapse from "react-bootstrap/Collapse";
-import { Navbar, Button, FormControl } from "react-bootstrap";
-
+import { Navbar, FormControl } from "react-bootstrap";
 function Header() {
   const [open, setOpen] = useState(false);
+  const style = {
+    color: "#fff",
+    textDecoration: "none",
+  };
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
-    <>
+    <div style={{
+      color: "#fff",
+      position: "absolute",
+      top: "0%",
+      width: "100%" }}>
       <Navbar>
         <Button
           className="MenuBtn"
@@ -55,9 +67,12 @@ function Header() {
               <ListGroup.Item className=" BlackDropdown mb-2">
                 Shop
               </ListGroup.Item>
-              <ListGroup.Item className=" BlackDropdown mb-2">
-                Request Quotation
-              </ListGroup.Item>
+              <Link to="/RFQ" style={style}>
+                <ListGroup.Item className=" BlackDropdown mb-2">
+                  Request Quotation
+                </ListGroup.Item>
+              </Link>
+
               <ListGroup.Item className=" BlackDropdown mb-2">
                 Services
               </ListGroup.Item>
@@ -95,7 +110,7 @@ function Header() {
               <ListGroup
                 className="faded"
                 style={{
-                  marginTop: "-20px"
+                  marginTop: "-20px",
                 }}
               >
                 <ListGroup.Item className="BlackDropdown">
@@ -109,7 +124,7 @@ function Header() {
           </div>
         </Collapse>
       </div>
-    </>
+    </div>
   );
 }
 

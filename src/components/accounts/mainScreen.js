@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./account.css";
 import { Link } from "react-router-dom";
 import Logo2 from "../logoComponents/logo2";
+function MainScreen() {
+  
+  return (
 
-class MainScreen extends Component {
-  render() {
-    return (
       <div className="main overflow">
         <div className="logo">
           <Logo2 />
@@ -37,6 +37,5 @@ class MainScreen extends Component {
       </div>
     );
   }
-}
 
 export default MainScreen;
