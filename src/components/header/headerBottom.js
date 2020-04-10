@@ -5,16 +5,12 @@ import { Link } from "react-router-dom";
 import Links  from "../formComponents/Links";
 
 function HeaderBottom() {
-  const [open, setOpen] = useState(false);
+  
   return (
     <>
       <div class="headerBottom">
         <ul class="leftMenu">
-          <li
-            onClick={() => setOpen(!open)}
-            aria-controls="Menu"
-            aria-expanded={open}
-          >
+          <li>
             All Categories <i class="fas fa-bars"></i>
           </li>
           <li>Clothings</li>
@@ -27,9 +23,6 @@ function HeaderBottom() {
         </ul>
       </div>
       <>
-        <Collapse in={open}>
-          <Links to="/">Hello!</Links>
-        </Collapse>
       </>
     </>
   );

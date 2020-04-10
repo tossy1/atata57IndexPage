@@ -6,7 +6,6 @@
 .contain {
   width: 100%;
   margin: auto;
-  margin-top: 10%;
 }
 
 .list-group {
@@ -101,4 +100,20 @@
   width: 100%;
 }
 
+@media screen and (max-width: 980px) {
+  .list-group {
+    padding: 5px;
+  }
+  .img-thumbnail {
+    margin: 70% auto;
+    height: 40%;
+  }
+  #ItemName {
+    font-size: 20px;
+    margin-bottom: -1px;
+  }
+  .itemDetails {
+    padding: 0px;
+  }
+}
 /*# sourceMappingURL=cart.css.map */

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import Login from "../accounts/Login";
-import Modal from "react-bootstrap/Modal";
+import MainScreen from "../accounts/mainScreen";
+import RightMenu from "./rightMenu"
 
 function HeaderTop() {
   const [show, setShow] = useState(false);
@@ -23,37 +23,9 @@ function HeaderTop() {
             <option value="Naira">NGN Naira</option>
           </select>
         </li>
+        <RightMenu />
       </ul>
-      <ul class="rightMenu">
-        <Link to="/wishlist" className="LinkStyle">
-          <li className="LinkStyle">
-            <i class="fa fa-heart"></i> My Wishlist
-          </li>
-        </Link>
-        <Link to="/cart" className="LinkStyle">
-          <li>
-            <i class="fas fa-shopping-cart"></i> Cart
-          </li>
-        </Link>
-        <Link className="LinkStyle" onClick={() => setShow(true)}>
-          <li>
-            <i className="fas fa-user-circle"></i> My Account
-          </li>
-          <Modal
-            show={show}
-            onHide={() => setShow(false)}
-            dialogClassName="modal-90w"
-            aria-labelledby="example-custom-modal-styling-title"
-          >
-            <Login />
-          </Modal>
-        </Link>
-        <Link to="/RFQ" className="LinkStyle">
-          <li>
-            <i class="fas fa-file-contract"></i> RFQ
-          </li>
-        </Link>
-      </ul>
+    
     </nav>
   );
 }

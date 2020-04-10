@@ -6,6 +6,9 @@ class SelectCountry extends Component {
     return (
       <div class="formgroup">
         <select id="country" name="country" class="form-control">
+          <option value="Select">Select A country</option>
+          <option value="Nigeria">Nigeria</option>
+
           <option value="Afghanistan">Afghanistan</option>
           <option value="Åland Islands">Åland Islands</option>
           <option value="Albania">Albania</option>
@@ -192,7 +195,7 @@ class SelectCountry extends Component {
           <option value="New Zealand">New Zealand</option>
           <option value="Nicaragua">Nicaragua</option>
           <option value="Niger">Niger</option>
-          <option value="Nigeria">Nigeria</option>
+          
           <option value="Niue">Niue</option>
           <option value="Norfolk Island">Norfolk Island</option>
           <option value="Northern Mariana Islands">

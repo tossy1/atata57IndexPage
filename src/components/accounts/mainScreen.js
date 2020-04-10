@@ -6,7 +6,7 @@ function MainScreen() {
   
   return (
 
-      <div className="main overflow">
+   <div className="main overflow">
         <div className="logo">
           <Logo2 />
         </div>
@@ -34,7 +34,7 @@ function MainScreen() {
             <i className="fab fa-instagram"></i>
           </a>
         </div>
-      </div>
+      </div> 
     );
   }
 

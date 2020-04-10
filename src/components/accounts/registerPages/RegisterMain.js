@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import "../acoounts.css";
+import "../account.css";
 import Container from "react-bootstrap/Container";
-import Logo2 from "../../logoComponents/logo2";
 import { Link } from "react-router-dom";
+import Header from "../../header/header";
+
 class Register extends Component {
   render() {
     return (
-      <Container className="registerMain">
-        <Logo2 />
-          
-        <p class="regH">Choose an Account Type</p>
+      <>
+        <div className="registerMain">
+          <p class="regH">Choose an Account Type</p>
           <div class="accountcolumn">
             <Link to="/IndividualRegistration" className="accountCard user">
               <i class="fas fa-user"></i>
@@ -30,15 +30,20 @@ class Register extends Component {
               <p>Warehouse</p>
             </Link>
           </div>
-        <div className="register">
-          <p>
-            Already have an account?
-            <Link to="/Signin">
-              <span>Signin</span>
-            </Link>
-          </p>
-        </div> 
-      </Container>
+          <div
+            className="register"
+            style={{ margin: "5% auto", padding: "2%" }}
+          >
+            <p>
+              Already have an account?
+              <Link to="/Signin">
+                <span>Signin</span>
+              </Link>
+            </p>
+          </div>
+        </div>
+        <Header />
+      </>
     );
   }
 }

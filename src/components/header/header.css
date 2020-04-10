@@ -1,7 +1,6 @@
 .headerTop {
   background-color: #1c1c1c;
   color: #fff;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,10 +17,6 @@
   padding: 10px 15px;
 }
 
-.headerTop ul li i {
-  padding-right: 5px;
-}
-
 .headerTop ul li select {
   padding: 5px;
   background-color: #1c1c1c;
@@ -29,12 +24,22 @@
   color: #fff;
   outline: none;
 }
-
 .rightMenu {
   position: absolute;
   right: 0;
-  margin-right: 5px;
-  margin-top: 4px;
+  top: 0;  
+  margin-top: 7px;
+}
+
+.rightMenu ul {
+  list-style-type: none;  
+  margin-top: -50px;
+}
+.rightMenu li {
+  display: inline;
+}
+.rightMenu li i {
+  padding-right: 5px;
 }
 
 .leftMenu {
@@ -70,61 +75,53 @@
 
 .headerCenter .logo {
   grid-column: span 2;
-  padding: 20px;
+  padding: 15px;
   width: 100%;
   margin: auto;
 }
 
 .headerCenter .logo img {
-  width: 70%;
-  height: 70%;
-  margin-left: 60px;
+  width: 50%;
+  margin-left: 40px;
 }
 
 .headerCenter .search {
-  padding: 50px;
-  grid-column: span 7;
+  padding: 15px;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+  grid-column: span 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.headerCenter .search select {
-  padding: 15px;
-  border: none;
-  outline: none;
-}
-
 .headerCenter .search input {
-  padding: 15.4px;
-  width: 70%;
-  margin-left: -5px;
+  padding: 15px;
+  width: 100%;
+  font-size: 13px;
   border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   outline: none;
 }
 
 .headerCenter .search button {
-  padding: 14px;
+  padding: 10px;
   margin-left: -5px;
   border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   outline: none;
   background-color: #0e8502;
   color: #fff;
   width: 50px;
 }
 
-.headerCenter .contact {
-  grid-column: span 2;
-}
-
-.headerCenter .contact {
-  color: #ff0000;
-}
-
 .headerBottom {
   -webkit-box-shadow: 2px 2px 5px #0000002c;
   box-shadow: 2px 2px 5px #0000002c;
-  padding: 15px;
+  padding: 7px;
 }
 
 .headerBottom ul {
@@ -134,7 +131,7 @@
 
 .headerBottom ul li {
   display: inline;
-  padding: 12px 30px;
+  padding: 10px 30px;
 }
 
 .headerBottom ul li:first-child {
@@ -150,7 +147,7 @@
 
 .headerBottom i {
   padding: 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 a {
