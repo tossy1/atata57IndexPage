@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 import Sam1 from "../Image/sample 1.png";
 import Sam2 from "../Image/sample 2.png";
 
-function ItemCarousel() {
+function ItemCarousel(props) {
   var settings = {
     dots: false,
     infinite: true,
@@ -27,7 +27,7 @@ function ItemCarousel() {
           backgroundColor: "#008600",
         }}
       >
-        Top Selling Items
+        {props.Heading}
       </Card.Header>
 
       <div

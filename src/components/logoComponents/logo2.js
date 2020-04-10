@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import logo2 from "./logo2.png";
 
 function Logo2(props) {
