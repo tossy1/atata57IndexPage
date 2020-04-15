@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Fredoka+One&display=swap");
+
 .headerTop {
   background-color: #1c1c1c;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Lato", sans-serif;
+  font-family: "Fredoka One", cursive;
   font-size: 14px;
 }
 
@@ -27,12 +29,12 @@
 .rightMenu {
   position: absolute;
   right: 0;
-  top: 0;  
+  top: 0;
   margin-top: 7px;
 }
 
 .rightMenu ul {
-  list-style-type: none;  
+  list-style-type: none;
   margin-top: -50px;
 }
 .rightMenu li {
@@ -122,6 +124,7 @@
   -webkit-box-shadow: 2px 2px 5px #0000002c;
   box-shadow: 2px 2px 5px #0000002c;
   padding: 7px;
+  font-family: "Fredoka One", cursive;
 }
 
 .headerBottom ul {

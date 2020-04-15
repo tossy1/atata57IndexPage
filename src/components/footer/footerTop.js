@@ -8,7 +8,6 @@ import { FormGroup } from "react-bootstrap";
 
 function footerTop() {
   const style = {
-    width: "100%",
     backgroundColor: "#000",
     color: "#fff",
   };
@@ -27,7 +26,7 @@ function footerTop() {
             <Form.Control
               type="email"
               placeholder="Enter email"
-              style={{ width: "50%", border: "none" }}
+              style={{ width: "40%", border: "none" }}
             />
             <Button variant="primary" type="submit" style={{ border: "none" }}>
               Submit

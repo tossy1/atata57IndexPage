@@ -1,29 +1,30 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import ListGroup from "react-bootstrap/ListGroup";
+import Row from "react-bootstrap/Row";
 import PriceList from "./pricelist";
 function Commodity() {
-  const styles = {
-    width: "100%",
-    padding: "5%",
-    listStyleType: "none",
-    color: "#0e8502",
-    backgroundColor: "#000",
-  };
   return (
-    <Container fluid>
-      <div
-        style={{
-          width: "100%",
-          padding: "5%",
-          marginTop: "6%",
-          textAlign: "center",
-          backgroundColor: "#f0f0f0",
-        }}
-      >
-        Currency Converter
-      </div>
-      <ListGroup style={styles}>USD NGN</ListGroup>
+    <Container className="converter">
+      <p>Currency Converter</p>
+      <Row>
+        <li>Amount</li>
+        <li>From</li>
+        <li>To</li>
+      </Row>
+      <Row>
+        <input type="text" />
+        <select>
+          <option>NGN</option>
+          <option>USD</option>
+          <option>ERP</option>
+        </select>
+        <select>
+          <option>USD</option>
+          <option>NGN</option>
+          <option>ERP</option>
+        </select>
+      </Row>
+      <p className="Amount" id="convertedAmount">387 USD</p>
     </Container>
   );
 }

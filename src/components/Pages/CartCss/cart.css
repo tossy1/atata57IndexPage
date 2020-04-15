@@ -4,7 +4,7 @@
 }
 
 .contain {
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 
@@ -21,7 +21,7 @@
 
 .list-group .list-group-item:hover {
   -webkit-box-shadow: 5px 5px 10px #9b9a9aa4;
-          box-shadow: 5px 5px 10px #9b9a9aa4;
+  box-shadow: 5px 5px 10px #9b9a9aa4;
 }
 
 .list-group select {

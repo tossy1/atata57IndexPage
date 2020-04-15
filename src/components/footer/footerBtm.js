@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 function FooterBottom() {
   const style = {
     margin: "auto",
-    width: "90%",
     color: "#fff",
   };
   return (
