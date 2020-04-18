@@ -6,7 +6,7 @@ function MainScreen() {
   
   return (
 
-   <div className="main overflow">
+   <div className="main">
         <div className="logo">
           <Logo2 />
         </div>

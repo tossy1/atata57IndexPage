@@ -51,7 +51,7 @@
 }
 
 .main {
-  width: 70%;
+  width: 100%;
   margin: auto;
   background-image: url("../formComponents/bgImg.png");
   background-position: top center;
@@ -91,12 +91,14 @@
 
 .Navigator ul li {
   display: inline;
-  padding: 20px;
+  padding: 15px;
+  font-size: 50px;
   cursor: pointer;
 }
 
-.Navigator ul li:hover {
+.Navigator a:hover {
   color: #ff0909;
+  text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -109,7 +111,7 @@ hr {
 
 .socialLinks {
   font-size: 20px;
-  width: 30%;
+  width: 50%;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -152,10 +154,11 @@ form {
 }
 
 .signin,
-.registerMain,
 .userReg {
-  width: 150%;
-  margin-left: -25%;
+  width: 70%;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 50px;
   padding: 30px;
   background-image: url("../formComponents/bgImg.png");
   font-family: "Baloo Da 2", cursive;
@@ -163,15 +166,17 @@ form {
   box-shadow: -5px 5px 10px #00000034;
 }
 
-.signin img,
-.registerMain img,
-.userReg img {
-  width: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.registerMain {
+  width: 70%;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-image: url("../formComponents/bgImg.png");
+  font-family: "Baloo Da 2", cursive;
+  -webkit-box-shadow: -5px 5px 10px #00000034;
+  box-shadow: -5px 5px 10px #00000034;
 }
-
 .signH,
 .regH {
   color: #3f3e3e;
@@ -276,29 +281,14 @@ form {
   color: #ff0909;
 }
 
-.accountType {
-  width: 100%;
-  padding: 20px;
-  margin: auto;
-}
-
-.accountcolumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .accountCard {
   border: 1px solid #111111;
   border-radius: 5px;
   color: #111111;
-  width: 40%;
+  width: 48%;
   text-align: center;
   padding: 10px;
-  margin: 10px;
+  margin: 6px;
 }
 
 .accountCard i {
@@ -309,30 +299,39 @@ form {
   font-size: 20px;
 }
 
+
 .user:hover {
-  border: 1px solid #ff0909;
-  color: #ff0909;
+  background-color: #ff0909;
+  text-decoration: none;
+  border: none;
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .company:hover {
-  border: 1px solid #008600;
-  color: #008600;
+  background-color: #008600;
+  text-decoration: none;
+  border: none;
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .seller:hover {
-  border: 1px solid #ffbd09;
-  color: #ffbd09;
+  background-color: #ffbd09;
+  text-decoration: none;
+  border: none;
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .warehouse:hover {
-  border: 1px solid #ff0998;
-  color: #ff0998;
+  background-color: #ff0998;
+  text-decoration: none;
+  border: none;
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -539,7 +538,7 @@ a {
   border: none;
   outline: none;
 }
-.featuredCat{
+.featuredCat {
   width: 30%;
   margin: auto;
   margin-top: 20px;
@@ -547,7 +546,7 @@ a {
   background-color: #fff;
   border-radius: 5px;
 }
-.featuredCat img{
+.featuredCat img {
   width: 25%;
   margin: auto;
   border: solid 1px #000;

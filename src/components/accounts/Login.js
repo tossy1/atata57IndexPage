@@ -6,6 +6,7 @@ import InputSigninPass from "../formComponents/signinPass";
 import GreenButton from "../formComponents/buttonGreen";
 import Container from "react-bootstrap/Container";
 import Header from "../header/header";
+import Footer from "../footer/footer";
 function Login() {
   return (
     <>
@@ -29,6 +30,7 @@ function Login() {
         </div>
       </Container>
       <Header />
+      {/* <Footer /> */}
     </>
   );
 }
