@@ -1,12 +1,18 @@
-import React, { Component } from "react";
+import React, {useState} from "react"
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 import "../accounts/acoounts.css";
-
 function InputPhone(props) {
-    return (
-      <div class="formgroup">
-        <input type="tel" placeholder={props.placeholder} />
-      </div>
-    );
-  }
+  const [value, setValue] = useState();
+  return (
+    <div class="formgroup">
+      <PhoneInput
+        placeholder={props.placeholder}
+         value={value}
+        onChange={setValue}
+      />
+    </div>
+  );
+}
 
 export default InputPhone;
