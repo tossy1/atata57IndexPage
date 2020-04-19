@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 function PriceList(props) {
   const style = {
     textAlign: "center",
+    padding: "5px",
   };
  
 

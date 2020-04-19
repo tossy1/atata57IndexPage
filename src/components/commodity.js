@@ -2,40 +2,39 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ListGroup from "react-bootstrap/ListGroup";
 import PriceList from "../components/pricelist";
+
 function Commodity() {
   const styles = {
-    width: "100%",
     padding: "5%",
     listStyleType: "none",
-    color: "#0e8502",
-    backgroundColor: "#000",
+    color: "#000",
+    backgroundColor: "#f0f0f0",
   };
   return (
-    <Container fluid>
+    <>
       <div
         style={{
-          width: "100%",
           padding: "5%",
           marginTop: "6%",
           textAlign: "center",
           backgroundColor: "#f0f0f0",
         }}
       >
-        Commodity Price
+        Commodity PriceList
       </div>
       <ListGroup style={styles}>
-              <PriceList Commodity="Rice" Price="15000" />
-              <PriceList Commodity="Rubber" Price="5000" />
-              <PriceList Commodity="Wood" Price="2500" />
-              <PriceList Commodity="Iron" Price="10000" />
-              <PriceList Commodity="Steel" Price="22000" />
-              <PriceList Commodity="Rice" Price="15000" />
-              <PriceList Commodity="Rubber" Price="5000" />
-              <PriceList Commodity="Wood" Price="2500" />
-              <PriceList Commodity="Iron" Price="10000" />
-              <PriceList Commodity="Steel" Price="22000" />
+        <PriceList Commodity="Rice" price="15000" />
+        <PriceList Commodity="Rubber" price="5000" />
+        <PriceList Commodity="Wood" price="2500" />
+        <PriceList Commodity="Iron" price="10000" />
+        <PriceList Commodity="Steel" price="22000" />
+        <PriceList Commodity="Rice" price="15000" />
+        <PriceList Commodity="Rubber" price="5000" />
+        <PriceList Commodity="Wood" price="2500" />
+        <PriceList Commodity="Iron" price="10000" />
+        <PriceList Commodity="Steel" price="22000" />
       </ListGroup>
-    </Container>
+      </>
   );
 }
 

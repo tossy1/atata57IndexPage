@@ -13,17 +13,17 @@ function HeaderBottom() {
           <li>
             All Categories <i class="fas fa-bars"></i>
           </li>
-          <li>Clothings</li>
-          <li>Electronics</li>
-          <li>Fashion</li>
-          <li>Home and Kitchen</li>
-          <li>Drinks</li>
-          <li>Mens</li>
-          <li>Women</li>
+          <li>Top Selling</li>
+          <li>Top Ranking</li>
+          <li>
+            Services <i className="fas fa-angle-down" />
+          </li>
+          <li>Feeds</li>
+          <li>Our Team</li>
+          <li>About Us</li>
         </ul>
       </div>
-      <>
-      </>
+      <></>
     </>
   );
 }

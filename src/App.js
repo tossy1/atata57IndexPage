@@ -16,6 +16,9 @@ import RegisterSeller from "../src/components/accounts/registerPages/registerSel
 import Cart from "./components/Pages/CartCss/cart";
 import RFQ from "../src/components/Pages/rfq";
 import Wishlist from "../src/components/Pages/wishlist";
+import ProductPage from "./components/Pages/ProductsPage";
+
+
 
 class App extends Component {
   render() {
@@ -29,6 +32,11 @@ class App extends Component {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/RFQ" component={RFQ} />
           <Route exact path="/Wishlist" component={Wishlist} />
+          <Route
+            exact
+            path="/ProductPage"
+            component={ProductPage}
+          />
           <Route
             exact
             path="/IndividualRegistration"

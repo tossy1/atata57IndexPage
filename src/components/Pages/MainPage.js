@@ -20,7 +20,8 @@ import Img3 from "../Image/CateItem3.png";
 import Img4 from "../Image/CateItem4.png";
 import Img5 from "../Image/CateItem5.png";
 import Img6 from "../Image/CateItem6.png";
-
+import TopAds from "../TopPartAds"
+import { Link } from "react-router-dom";
 function Page() {
   return (
     <>
@@ -28,7 +29,10 @@ function Page() {
 
       <Container fluid>
         <Row>
-          <Col xs={9}>
+          <Col xs={3}>
+            <TopAds/>
+          </Col>
+          <Col xs={6}>
             <SliderCarousel />
           </Col>
           <Col xs={3}>
@@ -45,6 +49,9 @@ function Page() {
       <Adscategory />
 
       <Container>
+        <Link to="/ProductPage">
+          Link
+        </Link>
         <ItemCarousel Heading="Deals Of the Day" />
       </Container>
       <Adscategory2 />
@@ -60,24 +67,23 @@ function Page() {
         }}
       >
         <Row>
-        <ItemCards title="Farm Produce" img1={Img1} img2={Img2} img3={Img3} />
-        <ItemCards title="Accesories" img1={Img4} img2={Img5} img3={Img6} />
+          <ItemCards title="Farm Produce" img1={Img1} img2={Img2} img3={Img3} />
+          <ItemCards title="Accesories" img1={Img4} img2={Img5} img3={Img6} />
           <ItemCards title="mens" img1={Img2} img2={Img5} img3={Img1} />
         </Row>
         <Row>
-         
           <ItemCards title="Livestock" img1={Img4} img2={Img5} img3={Img6} />
           <ItemCards title="Electornics" img1={Img2} img2={Img5} img3={Img1} />
           <ItemCards title="Agriculture" img1={Img1} img2={Img2} img3={Img3} />
         </Row>
         <Row>
           <ItemCards title="Electornics" img1={Img2} img2={Img5} img3={Img1} />
-          <ItemCards title="Livestock" img1={Img4} img2={Img5} img3={Img6} />         
+          <ItemCards title="Livestock" img1={Img4} img2={Img5} img3={Img6} />
           <ItemCards title="Agriculture" img1={Img1} img2={Img2} img3={Img3} />
         </Row>
       </div>
-        
-      <Footer />
+
+      {/* <Footer /> */}
     </>
   );
 }
