@@ -7,11 +7,11 @@ import HeaderBottom from './headerBottom';
 
 function MainHeader(){
     return (
-        <header>
+        <div className="MainHeader">
             <HeaderTop />
             <HeaderCenter />
             <HeaderBottom />
-        </header>
+        </div>
     );
 
 }

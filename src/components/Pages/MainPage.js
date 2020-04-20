@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../../App.css";
 import MainHeader from "../header/mainHeader";
 import SliderCarousel from "../carousel";
@@ -20,22 +20,23 @@ import Img3 from "../Image/CateItem3.png";
 import Img4 from "../Image/CateItem4.png";
 import Img5 from "../Image/CateItem5.png";
 import Img6 from "../Image/CateItem6.png";
-import TopAds from "../TopPartAds"
+import TopAds from "../TopPartAds";
 import { Link } from "react-router-dom";
+import FourAds from "../Pages/fourAds";
+import RFQ from "../rfq"
 function Page() {
   return (
     <>
-      <MainHeader />
-
-      <Container fluid>
+      <Container fluid style={{ marginTop: "16%" }}>
         <Row>
-          <Col xs={3}>
-            <TopAds/>
+          <Col xs={2}>
+            <TopAds />
           </Col>
-          <Col xs={6}>
+          <Col xs={8}>
             <SliderCarousel />
+            <FourAds />
           </Col>
-          <Col xs={3}>
+          <Col xs={2}>
             <CommodityPrice />
           </Col>
         </Row>
@@ -49,15 +50,16 @@ function Page() {
       <Adscategory />
 
       <Container>
-        <Link to="/ProductPage">
-          Link
-        </Link>
+        <Link to="/ProductPage">Link</Link>
         <ItemCarousel Heading="Deals Of the Day" />
       </Container>
       <Adscategory2 />
 
       <Container>
-        <Converter />
+        <Row>
+          <RFQ />
+          <Converter />
+        </Row>
       </Container>
       <div
         style={{
@@ -82,7 +84,7 @@ function Page() {
           <ItemCards title="Agriculture" img1={Img1} img2={Img2} img3={Img3} />
         </Row>
       </div>
-
+      <MainHeader />
       {/* <Footer /> */}
     </>
   );

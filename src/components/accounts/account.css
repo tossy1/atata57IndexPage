@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+.container-fluid {
+  background-color: #f0f0f0;
+}
 #btn {
   margin: auto;
   margin-left: 35%;
@@ -299,7 +301,6 @@ form {
   font-size: 20px;
 }
 
-
 .user:hover {
   background-color: #ff0909;
   text-decoration: none;
@@ -505,7 +506,7 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px;
+  padding: 50px;
   text-align: center;
   color: #fff;
   font-size: 17px;
@@ -553,4 +554,58 @@ a {
   border-radius: 5px;
 }
 
+.Bg-Card {
+  background-blend-mode: overlay;
+  background-image: url("../formComponents/bgImg.png");
+  background-color: #014d01;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-slider .slick-arrow::before {
+  color: transparent !important;
+}
+.slick-dots {
+  top: 290px;
+}
+.slick-dots li button:before {
+  font-size: 15px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #008600 !important;
+}
+.Bg-Card button {
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  outline: none;
+}
+.sliderContainer {
+  background-color: #000;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 50%;
+}
+.slider{
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.cardGroup{
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
 /*# sourceMappingURL=account.css.map */
