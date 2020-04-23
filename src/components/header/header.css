@@ -2,6 +2,7 @@
 
 .MainHeader {
   position: absolute;
+  width: 100%;
   top: 0;
 }
 .headerTop {
@@ -128,25 +129,21 @@
   background-color: #fff;
   -webkit-box-shadow: 2px 2px 5px #0000002c;
   box-shadow: 2px 2px 5px #0000002c;
-  padding: 7px;
   font-family: "Fredoka One", cursive;
+ 
 }
 
-.headerBottom ul {
-  list-style-type: none;
-  margin: auto;
-}
-
-.headerBottom ul li {
+.headerBottom li {
+   list-style-type: none;
   display: inline;
-  padding: 10px 30px;
+  padding: 7px 30px;
 }
 
-.headerBottom ul li:first-child {
+.headerBottom li:first-child {
   font-weight: bold;
 }
 
-.headerBottom ul li:hover {
+.headerBottom li:hover {
   background-color: #2b2b2b;
   color: #fff;
   -webkit-box-shadow: 0px 5px 20px #00000048;
@@ -154,8 +151,8 @@
 }
 
 .headerBottom i {
-  padding: 10px;
   font-size: 17px;
+  padding: 0px 7px ;
 }
 
 a {
@@ -290,33 +287,40 @@ nav .MenuBtn.btn.btn-primary:active {
   color: #0e8502;
   box-shadow: 0.5px 0px 5px 5px #2b2b2b10;
 }
+.AllCatDropMenu a li {
+  color: #000;
+}
+.AllCatDropMenu a:hover {
+  color: #0e8502;
+  text-decoration: none;
+}
 .hidden {
   display: none;
 }
-.SubMenu{
+.SubMenu {
   display: flex;
-    background-color: white;
-  margin-left:17%;
+  background-color: white;
+  margin-left: 17%;
   padding: 20px;
   width: 70%;
   padding-left: 50px;
 }
-.subMenulist{
-padding: 10px;
+.subMenulist {
+  padding: 10px;
 }
-.subMenulist p{
+.subMenulist p {
   font-size: 20px;
   font-weight: bold;
   color: #0e8502;
 }
-.subMenulist li{
+.subMenulist li {
   list-style-type: none;
 }
-.subMenulist a{
+.subMenulist a {
   color: #474747;
   font-size: 14px;
 }
-.subMenulist a:hover{
+.subMenulist a:hover {
   color: #0e8502;
   text-decoration: none;
 }

@@ -37,7 +37,7 @@ function PrevArrow(props) {
         padding: "9px 0",
         height: "20%",
         width: "30%",
-        marginTop:"-5%",
+        marginTop: "-5%",
         marginLeft: "-20px",
       }}
       onClick={onClick}
@@ -57,8 +57,10 @@ function ItemCarousel(props) {
 
   return (
     <div>
-      <Card style={{ margin: "5%" , padding: "0 5%" }}>
-        <Card.Header className="cardHeader" style={{ textAlign: "center" } }>{props.Heading}</Card.Header>
+      <Card style={{ margin: "5%", padding: "0 5%" }}>
+        <Card.Header className="cardHeader" style={{ textAlign: "center" }}>
+          {props.Heading}
+        </Card.Header>
         <i className="fas fa-chevron-left arrows arrows-left"></i>
         <i className="fas fa-chevron-right arrows arrows-right"></i>
 
@@ -71,11 +73,10 @@ function ItemCarousel(props) {
             <div>
               <Card
                 className="card-item"
-              
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding:"5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -101,7 +102,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -126,7 +127,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -151,7 +152,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -176,7 +177,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -201,7 +202,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image
@@ -226,7 +227,7 @@ function ItemCarousel(props) {
                 style={{
                   width: "100%",
                   margin: "7px",
-                  padding: "5%"
+                  padding: "5%",
                 }}
               >
                 <Image

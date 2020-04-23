@@ -470,6 +470,16 @@ a {
   border-radius: 5%;
   text-align: center;
 }
+.AdsStyle #details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: auto;
+  width: 90%;
+  text-overflow: ellipsis;
+  color: #000;
+}
 .AdsStyle:hover {
   background-color: #aaaaaa;
   background-blend-mode: overlay;
@@ -500,44 +510,49 @@ a {
   right: 0;
 }
 .converter {
-  background-blend-mode: hard-light;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-blend-mode: multiply;
+  background-color: #00000075;
   background-image: url("../Image/currencyBg.png");
-  background-color: #0000009c;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px;
-  text-align: center;
   color: #fff;
-  font-size: 17px;
-  height: 20rem;
-  margin: 10px auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 5%;
+}
+.converter p {
+  font-size: 20px;
+}
+.converter .inputs {
+  margin: auto;
+  padding: 0 5%;
+  width: 100%;
 }
 .converter li {
   list-style-type: none;
-  padding: 0 70px;
-  font-size: 20px;
-  color: #fff;
+  margin: auto 55px;
 }
 .converter .Amount {
-  font-size: 70px;
+  font-weight: bold;
+  font-size: 50px;
 }
 .converter input {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  outline: none;
+  width: 40%;
+  margin-right: 27px;
 }
 .converter select {
-  margin: 10px;
   padding: 10px;
-  border-radius: 50px;
-  width: 25%;
+  background-color: #2612d6;
   border: none;
-  outline: none;
+  color: #fff;
+  margin-right: 24px;
+}
+.converter select:hover {
+  padding: 10px;
+  background-color: #2612d6;
+  color: #000;
 }
 .featuredCat {
   width: 30%;
@@ -594,18 +609,126 @@ a {
   padding: 20px;
   max-height: 50%;
 }
-.slider{
+.slider {
   width: 100%;
   margin: 10px auto;
   border-radius: 10px;
   background-color: #ffffff;
   padding: 10px;
 }
-.cardGroup{
+.cardGroup {
   width: 100%;
   margin: 10px auto;
   border-radius: 10px;
   background-color: #ffffff;
   padding: 10px;
+}
+.homeRFQ {
+  background-color: #fff;
+  border: 15px solid #dddddd;
+  padding: 20px;
+  text-align: center;
+}
+.homeRFQ input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+.homeRFQ button {
+  margin: auto 5px;
+}
+.FixedSocialLinks {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+.menuList {
+  list-style-type: none;
+}
+.menuList i {
+  position: absolute;
+  right: 10px;
+}
+.CardAds {
+  width: 100%;
+  height: 4%;
+  margin: 1.5% 0;
+  background-color: #fff;
+}
+.CardAds .card-group {
+  width: 100%;
+  margin: auto;
+}
+.CardAds .card {
+  width: 100% !important;
+  margin: 1% 0;
+  font-size: 17px;
+  text-align: center;
+}
+.CardAds .card img {
+  align-self: center;
+}
+.CardAds .card p {
+  position: absolute;
+  align-self: center;
+  font-weight: bold;
+  color: rgb(109, 109, 109);
+  top: 100%;
+}
+.CardAds .rounded {
+  width: 20%;
+  object-fit: contain !important;
+  object-position: top center !important;
+}
+.products {
+  background-color: #fff;
+  margin: 2% auto;
+}
+.products .card-group {
+  background-color: transparent;
+}
+.products .card {
+  background-color: #fff;
+  margin: 4% 3%;
+}
+.products .card img {
+  width: 70%;
+  align-self: center;
+}
+.products .card p {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.products .card .description {
+  font-weight: bolder;
+}
+.products .card .amount {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.products .card .DiscountAndMoq{
+  width: 100%;  
+  list-style-type: none;
+}
+.products .card .DiscountAndMoq li{
+  display: inline;
+  padding: 5px 13px;
+}
+.products .card .discount{ 
+ font-size: 12px;
+  background-color: #ff09096b;
+  color: #7a0909;
+}
+.products .card .MOQ{ 
+ font-size: 12px;
+  background-color: #008600b0;
+  color: #ffffff;
+}
+.links{  
+  margin-bottom: 2%;
+}
+.links li{
+  display: inline;
 }
 /*# sourceMappingURL=account.css.map */

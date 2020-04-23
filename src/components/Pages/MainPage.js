@@ -23,10 +23,11 @@ import Img6 from "../Image/CateItem6.png";
 import TopAds from "../TopPartAds";
 import { Link } from "react-router-dom";
 import FourAds from "../Pages/fourAds";
-import RFQ from "../rfq"
+import RFQ from "../rfq";
+import FixedSocialLinks from "../../components/Pages/fixedSocialLinks";
 function Page() {
   return (
-    <>
+    <div>
       <Container fluid style={{ marginTop: "16%" }}>
         <Row>
           <Col xs={2}>
@@ -50,15 +51,18 @@ function Page() {
       <Adscategory />
 
       <Container>
-        <Link to="/ProductPage">Link</Link>
         <ItemCarousel Heading="Deals Of the Day" />
       </Container>
       <Adscategory2 />
 
       <Container>
         <Row>
-          <RFQ />
-          <Converter />
+          <Col xs={6}>
+            <RFQ />
+          </Col>
+          <Col xs={6}>
+            <Converter />
+          </Col>
         </Row>
       </Container>
       <div
@@ -85,8 +89,9 @@ function Page() {
         </Row>
       </div>
       <MainHeader />
+      <FixedSocialLinks />
       {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 

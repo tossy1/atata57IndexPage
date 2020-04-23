@@ -13,7 +13,10 @@ function AdsCard(props) {
   return (
     <div className="AdsStyle">
       <Image src={props.src} rounded />
-      <p id="price">{props.price} NGN</p>
+      <p id="details">{props.details}</p>
+      <p id="price">
+        {props.from} - {props.to}
+      </p>
       <p id="discount">{props.discount} off</p>
     </div>
   );
@@ -30,20 +33,92 @@ function AdsCategory2() {
         <Link to="/">View All</Link>
       </div>
       <Row>
-        <AdsCard src={CatImg1} price="500" discount="-25%" />
-        <AdsCard src={CatImg3} price="200" discount="-25%" />
-        <AdsCard src={CatImg2} price="5000" discount="-25%" />
-        <AdsCard src={CatImg4} price="500" discount="-25%" />
-        <AdsCard src={CatImg5} price="5000" discount="-25%" />
-        <AdsCard src={CatImg6} price="2500" discount="-25%" />
+        <AdsCard
+          src={CatImg1}
+          details="Basket Tomato from Jankara"
+          from="500"
+          to="2500"
+          discount="-5%"
+        />
+        <AdsCard
+          src={CatImg3}
+          details="Basket Tomato from Jankara"
+          from="5000"
+          to="25000"
+          discount="-25%"
+        />
+        <AdsCard
+          src={CatImg2}
+          details="Basket Tomato from Jankara"
+          from="1250"
+          to="2500"
+          discount="-10%"
+        />
+        <AdsCard
+          src={CatImg4}
+          details="Basket Tomato from Jankara"
+          from="780"
+          to="2890"
+          discount="-50%"
+        />
+        <AdsCard
+          src={CatImg5}
+          details="Basket Tomato from Jankara"
+          from="380"
+          to="3000"
+          discount="-25%"
+        />
+        <AdsCard
+          src={CatImg6}
+          details="Basket Tomato from Jankara"
+          from="1500"
+          to="25000"
+          discount="-25%"
+        />
       </Row>
       <Row>
-        <AdsCard src={CatImg5} price="5000" discount="-25%" />
-        <AdsCard src={CatImg4} price="50000" discount="-25%" />
-        <AdsCard src={CatImg2} price="500" discount="-25%" />
-        <AdsCard src={CatImg1} price="500" discount="-25%" />
-        <AdsCard src={CatImg4} price="500" discount="-25%" />
-        <AdsCard src={CatImg5} price="5000" discount="-25%" />
+        <AdsCard
+          src={CatImg5}
+          details="Basket Tomato from Jankara"
+          from="1500"
+          to="25000"
+          discount="-2%"
+        />
+        <AdsCard
+          src={CatImg4}
+          details="Basket Tomato from Jankara"
+          from="1500"
+          to="25000"
+          discount="-7%"
+        />
+        <AdsCard
+          src={CatImg2}
+          details="Basket Tomato from Jankara"
+          from="1500"
+          to="25000"
+          discount="-25%"
+        />
+        <AdsCard
+          src={CatImg1}
+          details="Basket Tomato from Jankara"
+          from="150"
+          to="2500"
+          discount="-25%"
+        />
+        <AdsCard
+          src={CatImg4}
+          details="Basket Tomato from Jankara"
+          from="1500"
+          to="25000"
+          discount="-25%"
+        />
+        <AdsCard
+          src={CatImg5}
+          details="Basket Tomato from Jankara"
+          from="100000"
+          to="258900"
+          discount="-25%"
+        />
       </Row>
     </div>
   );

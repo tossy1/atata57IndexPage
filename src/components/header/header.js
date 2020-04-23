@@ -5,35 +5,13 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
-import ListGroup from "react-bootstrap/ListGroup";
+import HeaderBottom from "../header/headerBottom";
 import HeaderLogo from "../logoComponents/headerLogo";
-import Collapse from "react-bootstrap/Collapse";
 import { Navbar, FormControl } from "react-bootstrap";
 function Header() {
-  const [open, setOpen] = useState(false);
-  const style = {
-    color: "#fff",
-    textDecoration: "none",
-  };
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
-    <div style={{
-      color: "#fff",
-      position: "absolute",
-      top: "0%",
-      width: "100%" }}>
+    <div className="MainHeader">
       <Navbar>
-        <Button
-          className="MenuBtn"
-          onClick={() => setOpen(!open)}
-          aria-controls="Menu"
-          aria-expanded={open}
-        >
-          <i class="fas fa-bars"></i>
-        </Button>
         <Navbar.Brand>
           <Link to="/">
             <HeaderLogo
@@ -57,73 +35,8 @@ function Header() {
           </InputGroup.Append>
         </InputGroup>
       </Navbar>
-      <div className="Menu">
-        <Collapse in={open}>
-          <div id="menu">
-            <ListGroup>
-              <ListGroup.Item className="BlackDropdown mb-2">
-                About
-              </ListGroup.Item>
-              <ListGroup.Item className=" BlackDropdown mb-2">
-                Shop
-              </ListGroup.Item>
-              <Link to="/RFQ" style={style}>
-                <ListGroup.Item className=" BlackDropdown mb-2">
-                  Request Quotation
-                </ListGroup.Item>
-              </Link>
 
-              <ListGroup.Item className=" BlackDropdown mb-2">
-                Services
-              </ListGroup.Item>
-              <ListGroup.Item className=" BlackDropdown mb-2">
-                Help
-              </ListGroup.Item>
-
-              <Link to="/Signin">
-                <ListGroup.Item>
-                  <Button variant="outline-danger" className="mb-2 ">
-                    Login
-                  </Button>
-                </ListGroup.Item>
-              </Link>
-
-              <ListGroup
-                horizontal
-                className="socials"
-                style={{ marginTop: "-20px", marginLeft: "-10px" }}
-              >
-                <ListGroup.Item className="social">
-                  <i class="fab fa-facebook-f"></i>
-                </ListGroup.Item>
-                <ListGroup.Item className="social">
-                  <i class="fab fa-twitter"></i>
-                </ListGroup.Item>
-                <ListGroup.Item className="social">
-                  <i class="fab fa-instagram"></i>
-                </ListGroup.Item>
-                <ListGroup.Item className="social">
-                  <i class="fab fa-linkedin-in"></i>
-                </ListGroup.Item>
-              </ListGroup>
-
-              <ListGroup
-                className="faded"
-                style={{
-                  marginTop: "-20px",
-                }}
-              >
-                <ListGroup.Item className="BlackDropdown">
-                  Terms Of Services
-                </ListGroup.Item>
-                <ListGroup.Item className="BlackDropdown">
-                  Privacy Policy
-                </ListGroup.Item>
-              </ListGroup>
-            </ListGroup>
-          </div>
-        </Collapse>
-      </div>
+      <HeaderBottom />
     </div>
   );
 }

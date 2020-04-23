@@ -5,6 +5,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import MenuList from "./dropdownmenuList";
 import SubMenu from "./submenu";
+import { Navbar } from "react-bootstrap";
 function HeaderBottom() {
   function handleOver(e) {
     e.preventDefault();
@@ -29,8 +30,7 @@ function HeaderBottom() {
   }
   return (
     <>
-      <div class="headerBottom">
-        <ul class="leftMenu">
+    <Navbar sticky="top" className="headerBottom">
           <li onMouseOver={handleOver}>
             All Categories <i class="fas fa-bars"></i>
           </li>
@@ -43,29 +43,55 @@ function HeaderBottom() {
             Services
             <i className="fas fa-angle-down" />
           </li>
-        </ul>
-      </div>
-      <>
+        </Navbar>
+    
         <div
           id="Dropdown"
           className="AllCatDropMenu hidden"
           onMouseOver={(handleOver, mouseoverList)}
         >
-          <MenuList name="Machinery" />
-          <MenuList name="Clothing" />
-          <MenuList name="Farm Product" />
-          <MenuList name="Livestock" />
-          <MenuList name="Shoes" />
-          <MenuList name="Raw Material" />
-          <MenuList name="Insurance" />
-          <MenuList name="Home Appliance" />
-          <MenuList name="Electonics" />
-          <MenuList name="Vehicle Parts" />
-          <MenuList name="Travel" />
-          <MenuList name="Medical" />
-          <MenuList name="Life and properties" />
-          <MenuList name="Real Estate" />
-          <MenuList name="anything Jare" />
+          <Link to="/ProductPage">
+            <MenuList name="Machinery" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Clothing" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Farm Product" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Livestock" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Shoes" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Raw Material" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Insurance" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Home Appliance" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Electonics" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Vehicle Parts" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Travel" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Medical" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Life and properties" />
+          </Link>
+          <Link to="/ProductPage">
+            <MenuList name="Real Estate" />
+          </Link>
         </div>
         <div id="subMenu" className="hidden" onMouseOut={handleOut}>
           <div className="SubMenu">
@@ -113,7 +139,6 @@ function HeaderBottom() {
           </div>
         </div>
       </>
-    </>
   );
 }
 

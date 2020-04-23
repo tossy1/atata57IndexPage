@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../header/header";
+import "../accounts/account.css";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import AdsImg from "../Image/adImage.jpg";
@@ -12,11 +13,17 @@ import CatImg5 from "../Image/CateItem5.png";
 import CatImg6 from "../Image/CateItem6.png";
 import AdsCard from "../Pages/adcard";
 import Adscategory from "./AdsItems";
-import Rating from "../starRating"
+import Rating from "../starRating";
 import { Container, Row, Col } from "react-bootstrap";
 import Pagination from "react-bootstrap/Pagination";
-
-
+import FixedSocialLinks from "../Pages/fixedSocialLinks";
+import MenuList from "../header/dropdownmenuList";
+import Image from "react-bootstrap/Image";
+import Display1 from "../Image/display.png";
+import Display2 from "../Image/display2.png";
+import Display3 from "../Image/display3.png";
+import Display4 from "../Image/display4.png";
+import PriceFilter from "../pricefilter";
 
 function ItemDisplay() {
   const style = {
@@ -24,209 +31,433 @@ function ItemDisplay() {
   };
   return (
     <>
-      <div
+      <Container
+        fluid
         style={{
           backgroundColor: "#e0e0e0",
-          paddingTop: "8%",
+          paddingTop: "14%",
         }}
       >
-        <div style={{ margin: "auto", width: "80%" }}>
-          <img src={AdsImg} style={{ width: "100%" }} />
-        </div>
-        <Container fluid style={style}>
-          <div>
-            <Row>
-              <Col
-                xs={2}
+        <div className="links">
+          <li>Home/</li>
+          <li>ProductPage</li>          
+      </div>
+        <Row style={{ margin: "auto" }}>
+          <Col
+            xs={2}
+            style={{
+              width: "100%",
+              backgroundColor: "#fff",
+            }}
+          >
+            <div
+              style={{
+                margin: "10px",
+                marginBottom: "30px",
+                textAlign: "center",
+                fontSize: "20px",
+                fontWeight: "bold",
+              }}
+            >
+              <p>Categories</p>
+            </div>
+
+            <div
+              style={{
+                color: "#797878",
+                fontSize: "17px",
+              }}
+            >
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+              <MenuList name="Placeholder" />
+            </div>
+            <div className>
+              <div
                 style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "5px",
+                  margin: "10px",
+                  marginBottom: "30px",
+                  textAlign: "center",
+                  fontSize: "20px",
+                  fontWeight: "bold",
                 }}
               >
-                Hello!
+                <p>Price Range</p>
+              </div>
+              <PriceFilter />
+            </div>
+          </Col>
+          <Col xs={10}>
+            <div
+              style={{
+                margin: "auto",
+                width: "100%",
+                backgroundColor: "#fff",
+                padding: "10px",
+              }}
+            >
+              <img src={AdsImg} style={{ width: "100%" }} />
+            </div>
+            <div className="CardAds">
+              <CardGroup>
+                <Card>
+                  <Image src={Display1} rounded />
+                  <p>Most Viewed</p>
+                </Card>
+                <Card>
+                  <Image src={Display2} rounded />
+                  <p>Top Rated</p>
+                </Card>
+                <Card>
+                  <Image src={Display3} rounded />
+                  <p>Best Manufacturer</p>
+                </Card>
+                <Card>
+                  <Image src={Display4} rounded />
+                  <p>Used Goods</p>
+                </Card>
+              </CardGroup>
+            </div>
+
+            <div className="products">
+              <Col>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display2} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Iphone 11</p>
+                      <p className="amount">50,000 - 150,000</p>
+                      <div className="DiscountAndMoq">
+                        <li className="discount">Iphone 11</li>
+                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                      </div>
+                    </div>
+                  </Card>
+                </CardGroup>
               </Col>
-              <Col xs={10}>
-                <div
-                  style={{
-                    backgroundColor: "#fff",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <CardGroup>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg1} />
-                      <Card.Body>
-                        <Card.Title>Tomatos</Card.Title>
-                        <Card.Text>{/* <Rating /> */}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg2} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg3} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg5} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                  <CardGroup>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg1} />
-                      <Card.Body>
-                        <Card.Title>Tomatos</Card.Title>
-                        <Card.Text>{/* <Rating /> */}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg2} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg3} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg5} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                  <CardGroup>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg1} />
-                      <Card.Body>
-                        <Card.Title>Tomatos</Card.Title>
-                        <Card.Text>{/* <Rating /> */}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg2} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg3} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg5} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                  <CardGroup>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg1} />
-                      <Card.Body>
-                        <Card.Title>Tomatos</Card.Title>
-                        <Card.Text>{/* <Rating /> */}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg2} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg3} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg5} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                  <CardGroup>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg1} />
-                      <Card.Body>
-                        <Card.Title>Tomatos</Card.Title>
-                        <Card.Text>{/* <Rating /> */}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg2} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg3} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card>
-                      <Card.Img variant="top" src={CatImg5} />
-                      <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text></Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                </div>
-                <Pagination>
-                  <Pagination.First />
-                  <Pagination.Prev />
-                  <Pagination.Item>{1}</Pagination.Item>
-                  <Pagination.Ellipsis />
-
-                  <Pagination.Item>{10}</Pagination.Item>
-                  <Pagination.Item>{11}</Pagination.Item>
-                  <Pagination.Item active>{12}</Pagination.Item>
-                  <Pagination.Item>{13}</Pagination.Item>
-                  <Pagination.Item disabled>{14}</Pagination.Item>
-
-                  <Pagination.Ellipsis />
-                  <Pagination.Item>{20}</Pagination.Item>
-                  <Pagination.Next />
-                  <Pagination.Last />
-                </Pagination>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-        <Container fluid>Hello!</Container>
-      </div>
-
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <FixedSocialLinks />
       <Header />
     </>
   );
