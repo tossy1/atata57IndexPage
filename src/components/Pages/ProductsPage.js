@@ -40,13 +40,14 @@ function ItemDisplay() {
       >
         <div className="links">
           <li>Home/</li>
-          <li>ProductPage</li>          
-      </div>
+          <li>ProductPage</li>
+        </div>
         <Row style={{ margin: "auto" }}>
           <Col
             xs={2}
             style={{
               width: "100%",
+              marginBottom: "2%",
               backgroundColor: "#fff",
             }}
           >
@@ -125,7 +126,27 @@ function ItemDisplay() {
                   <Image src={Display4} rounded />
                   <p>Used Goods</p>
                 </Card>
+                <Card>
+                  <Image src={Display3} rounded />
+                  <p>Used Goods</p>
+                </Card>
               </CardGroup>
+            </div>
+
+            <div
+              style={{ margin: "5% 0", width: "100%", textAlign: "center" }}
+            >
+              <Row>
+                <Col xs={2}>
+                  <hr />
+                </Col>
+                <Col>
+                  <h4>Products</h4>
+                </Col>
+                <Col xs={2}>
+                  <hr />
+                </Col>
+              </Row>
             </div>
 
             <div className="products">
@@ -136,44 +157,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -182,44 +220,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -228,44 +283,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -274,44 +346,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -320,44 +409,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -366,44 +472,61 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
                 <CardGroup>
@@ -412,49 +535,427 @@ function ItemDisplay() {
                     <div>
                       <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
-                  </Card>
-                  <Card>
-                    <Image src={Display2} />
-                    <div>
-                      <p className="description">Iphone 11</p>
-                      <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
                       </div>
-                    </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                   <Card>
                     <Image src={Display4} />
                     <div>
-                      <p className="description">Iphone 11</p>
+                      <p className="description">Deep Freezer</p>
                       <p className="amount">50,000 - 150,000</p>
-                      <div className="DiscountAndMoq">
-                        <li className="discount">Iphone 11</li>
-                        <li className="MOQ"> 11 pieces (MOQ)</li>
-                      </div>
                     </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                </CardGroup>
+                <CardGroup>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
+                  </Card>
+
+                  <Card>
+                    <Image src={Display4} />
+                    <div>
+                      <p className="description">Deep Freezer</p>
+                      <p className="amount">50,000 - 150,000</p>
+                    </div>
+                    <Row className="DiscounMOq">
+                      <div className="discount">
+                        <span>-5%</span>
+                      </div>
+                      <div className="MOQ">
+                        <span> 11 pieces (MOQ)</span>
+                      </div>
+                    </Row>
                   </Card>
                 </CardGroup>
               </Col>
             </div>
           </Col>
+
+          <div style={{ margin: "5% 0", width: "100%", textAlign: "center" }}>
+            <Row>
+              <Col xs={2}>
+                <hr />
+              </Col>
+              <Col>
+                <h4>RECOMMENDED FOR YOU</h4>
+              </Col>
+              <Col xs={2}>
+                <hr />
+              </Col>
+            </Row>
+          </div>
+
+
+          <div className="products">
+            <CardGroup>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+            </CardGroup>
+            <CardGroup>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+              <Card>
+                <Image src={Display4} />
+                <div>
+                  <p className="description">Deep Freezer</p>
+                  <p className="amount">50,000 - 150,000</p>
+                </div>
+                <Row className="DiscounMOq">
+                  <div className="discount">
+                    <span>-5%</span>
+                  </div>
+                  <div className="MOQ">
+                    <span> 11 pieces (MOQ)</span>
+                  </div>
+                </Row>
+              </Card>
+            </CardGroup>
+          </div>
         </Row>
       </Container>
       <FixedSocialLinks />
