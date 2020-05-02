@@ -3,23 +3,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function PriceList(props) {
-  const style = {
-    textAlign: "center",
-    padding: "5px",
-  };
+  
  
 
   return (
-    <Row style={style}>
-      <Col>
-        <li>{props.Commodity}</li>
-      </Col>
-      <Col>
-        <li>
-          {props.price}
-        </li>
-      </Col>
-    </Row>
+    <div className="PriceListStyle">
+      <span>{props.Commodity} / {props.country}</span>
+      <span className="equals">=</span>
+      <span>{props.price}</span>
+      <span><i className={props.icon}></i></span>
+   </div>
   );
 }
 

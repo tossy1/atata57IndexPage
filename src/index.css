@@ -9,3 +9,6 @@ global use */
 .hidden{
   display:none;
 }
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}

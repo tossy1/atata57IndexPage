@@ -21,7 +21,8 @@
     "react-select-currency": "^1.0.7",
     "react-slick": "^0.25.2",
     "react-star-rating": "^1.4.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

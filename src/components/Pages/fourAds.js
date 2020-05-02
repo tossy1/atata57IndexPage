@@ -11,7 +11,7 @@ function FourAds() {
     fontWeight: "Bold",
   }
   return (
-    <CardGroup className="cardGroup">
+    <CardGroup className="FourcardGroup">
       <Card className="Bg-Card">
         <Card.ImgOverlay>
           <Card.Text style={style}>Recommendation</Card.Text>

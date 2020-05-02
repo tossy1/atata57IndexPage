@@ -4,18 +4,7 @@ import "../accounts/account.css";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import AdsImg from "../Image/adImage.jpg";
-import ItemCards from "../FeaturedCategories";
-import CatImg1 from "../Image/CateItem1.png";
-import CatImg2 from "../Image/CateItem2.png";
-import CatImg3 from "../Image/CateItem3.png";
-import CatImg4 from "../Image/CateItem4.png";
-import CatImg5 from "../Image/CateItem5.png";
-import CatImg6 from "../Image/CateItem6.png";
-import AdsCard from "../Pages/adcard";
-import Adscategory from "./AdsItems";
-import Rating from "../starRating";
 import { Container, Row, Col } from "react-bootstrap";
-import Pagination from "react-bootstrap/Pagination";
 import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import MenuList from "../header/dropdownmenuList";
 import Image from "react-bootstrap/Image";
@@ -24,6 +13,7 @@ import Display2 from "../Image/display2.png";
 import Display3 from "../Image/display3.png";
 import Display4 from "../Image/display4.png";
 import PriceFilter from "../pricefilter";
+import Link from "react-dom";
 
 function ItemDisplay() {
   const style = {
@@ -69,6 +59,7 @@ function ItemDisplay() {
                 fontSize: "17px",
               }}
             >
+
               <MenuList name="Placeholder" />
               <MenuList name="Placeholder" />
               <MenuList name="Placeholder" />
@@ -111,9 +102,9 @@ function ItemDisplay() {
             <div className="CardAds">
               <CardGroup>
                 <Card>
-                  <Image src={Display1} rounded />
-                  <p>Most Viewed</p>
-                </Card>
+                    <Image src={Display1} rounded />
+                    <p>Most Viewed</p>
+                  </Card>
                 <Card>
                   <Image src={Display2} rounded />
                   <p>Top Rated</p>
@@ -133,9 +124,7 @@ function ItemDisplay() {
               </CardGroup>
             </div>
 
-            <div
-              style={{ margin: "5% 0", width: "100%", textAlign: "center" }}
-            >
+            <div style={{ margin: "5% 0", width: "100%", textAlign: "center" }}>
               <Row>
                 <Col xs={2}>
                   <hr />
@@ -798,7 +787,6 @@ function ItemDisplay() {
               </Col>
             </Row>
           </div>
-
 
           <div className="products">
             <CardGroup>

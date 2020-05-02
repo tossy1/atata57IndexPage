@@ -1,5 +1,5 @@
 import React, { useState, Component } from "react";
-import Slider from "react-slick";
+import Carousel from 'react-bootstrap/Carousel'
 import Card from "react-bootstrap/Card";
 import "../components/accounts/account.css";
 import CarouselImg from "../../src/components/Image/Mohsen Fatemian on Behance.png";
@@ -14,42 +14,48 @@ import CarouselImg9 from "../../src/components/Image/957.jpg";
 export default class SimpleSlider extends Component {
   
   render() {
-    const settings = {
-      infinite: true,
-      autoplay: true,
-      autoplayspeed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-    };
+    
     return (
       <div className="slider">
-        <Slider {...settings}>
-          <div>
-            <img src={CarouselImg} />
-          </div>
-          <div>
-            <img src={CarouselImg2} />
-          </div>
-          <div>
-            <img src={CarouselImg3} />
-          </div>
-          <div>
-            <img src={CarouselImg5} />
-          </div>
-          <div>
-            <img src={CarouselImg6} />
-          </div>
-          <div>
-            <img src={CarouselImg7} />
-          </div>
-          <div>
-            <img src={CarouselImg8} />
-          </div>
-          <div>
-            <img src={CarouselImg9} />
-          </div>
-        </Slider>
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg2}
+            />
+
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg3}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg5}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg6}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={CarouselImg7}
+            />
+          </Carousel.Item>
+        </Carousel>
         </div>
     );
   }

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 import MainScreen from "../accounts/mainScreen";
-import RightMenu from "./rightMenu"
-
+import RightMenu from "./rightMenu";
 
 function HeaderTop() {
   const [show, setShow] = useState(false);
@@ -11,13 +10,6 @@ function HeaderTop() {
   return (
     <nav class="headerTop">
       <ul class="leftMenu">
-        <li class="Menu1">
-          <select name="language" id="language">
-            <option value="English">English</option>
-            <option value="Yoruba">Yoruba</option>
-            <option value="French">French</option>
-          </select>
-        </li>
         <li class="Menu2">
           <select name="currency" id="currency">
             <option value="dollar">US dollar</option>
@@ -26,7 +18,6 @@ function HeaderTop() {
         </li>
         <RightMenu />
       </ul>
-    
     </nav>
   );
 }

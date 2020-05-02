@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Route, Switch} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
+
+
 //Pages//
 
 import Page from "../src/components/Pages/MainPage";
@@ -17,13 +19,12 @@ import Cart from "./components/Pages/CartCss/cart";
 import RFQ from "../src/components/Pages/rfq";
 import Wishlist from "../src/components/Pages/wishlist";
 import ProductPage from "./components/Pages/ProductsPage";
-
+import PreviewPage from "./components/Pages/PreviewPage"
 
 
 class App extends Component {
   render() {
     return (
-      <Router>
         <Switch>
           <Route exact path="/" component={Page} />
           <Route exact path="/MyAccount" component={MainScreen} />
@@ -36,6 +37,11 @@ class App extends Component {
             exact
             path="/ProductPage"
             component={ProductPage}
+          />
+          <Route
+            exact
+            path="/PreviewPage"
+            component={PreviewPage}
           />
           <Route
             exact
@@ -55,7 +61,6 @@ class App extends Component {
           />
           <Route component={NotFound} />
         </Switch>
-      </Router>
     );
   }
 }
