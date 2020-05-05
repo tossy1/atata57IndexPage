@@ -18,51 +18,8 @@ function ItemCarousel(props) {
   return (
     <div className="ItemCarousel">
       <Slider {...settings}>
-        <div className="Slider-Item">
-          <img src={Sam1} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam2} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam1} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam2} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam1} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam2} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam1} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam2} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
-        <div className="Slider-Item">
-          <img src={Sam1} />
-          <span className="title">Placeholder</span>
-          <p className="amount">Placeholder</p>
-        </div>
+        
+         
       </Slider>
       <div className="arrows">
         <i class="far fa-caret-square-left"></i>

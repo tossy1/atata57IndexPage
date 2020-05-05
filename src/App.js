@@ -40,7 +40,7 @@ class App extends Component {
           />
           <Route
             exact
-            path="/PreviewPage"
+            path="/Details"
             component={PreviewPage}
           />
           <Route

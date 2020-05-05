@@ -432,18 +432,7 @@ a {
   color: #008600;
   text-decoration: none;
 }
-.card {
-  border: none;
-}
-.card-header {
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
-  border: none;
-}
-.card-item:hover {
-  background-color: #ecececa4;
-  transition: 0.5s;
-}
+
 .item-title {
   font-family: "Fredoka One", cursive;
   font-size: 1.1rem;
@@ -506,21 +495,6 @@ a {
   margin-left: auto;
   font-weight: bold;
   color: #000000;
-}
-.topAds {
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 5%;
-}
-.topAds .card {
-  margin: auto;
-  background-color: #fff;
-  margin-bottom: 5px;
-  width: 10%;
-}
-.topAds .card img {
-  object-fit: contain;
-  object-position: top center;
 }
 .Adscategory {
   background-blend-mode: overlay;
@@ -740,97 +714,19 @@ a {
   position: absolute;
   right: 10px;
 }
-.CardAds {
-  width: 100%;
-  height: 100px;
-  margin: auto;
-  background-color: #fff;
-  margin-bottom: 2%;
-}
-.CardAds .card-group {
-  width: 100%;
-}
-.CardAds .card {
-  width: 100% !important;
-  font-size: 17px;
-  text-align: center;
-}
-.CardAds .card img {
-  align-self: center;
-}
-.CardAds .card p {
-  position: absolute;
-  align-self: center;
-  font-weight: bold;
-  color: rgb(109, 109, 109);
-  top: 100%;
-}
-.CardAds .rounded {
-  width: 20%;
-  object-fit: contain !important;
-  object-position: top center !important;
-}
 .products {
   background-color: #fff;
   width: 100%;
   margin: auto;
   margin-bottom: 2%;
 }
-.products .card-group {
-  background-color: transparent;
-}
-.products .card {
-  background-color: #fff;
-  margin: 5px;
-}
-.products .card:hover {
-  box-shadow: 1px 1px 10px #0000004d;
-}
-.products .card img {
-  width: 50%;
-  align-self: center;
-}
-.products .card p {
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.products .card .description {
-  font-weight: bolder;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 50%;
-}
-.products .card .amount {
-  font-size: 25px;
-  font-weight: bolder;
-}
 .DiscounMOq {
   width: 100%;
   margin: auto;
 }
 
-.products .card span {
-  padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
-}
-.products .card .discount {
-  background-color: #ff09096b;
-  color: #7a0909;
-  align-self: center;
-  width: 50%;
-}
-.products .card .MOQ {
-  background-color: #008600b0;
-  color: #ffffff;
-  width: 50%;
-}
 .Recommendation {
   background-color: #fff;
-}
-.Recommendation .card img {
-  width: 50%;
 }
 .links {
   margin-bottom: 2%;

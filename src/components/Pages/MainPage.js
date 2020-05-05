@@ -35,7 +35,7 @@ function Page() {
       </div>
       <div className="index-slider">
         <span> Hello! </span>
-        <ItemCarousel />
+        <Adscategory />
       </div>
       
       
