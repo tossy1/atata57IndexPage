@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "../accounts/acoounts.css";
-
 class RedButton extends Component {
     render() {
         return (

@@ -16,31 +16,9 @@ export default class ItemDisplay extends Component {
             >
               <Link to="/details">
                 <img src={img} alt="product" className="class-img-top" />
-                <button
-                  className="cart-btn whislistBtn"
-                  disabled={inCart ? true : false}
-                  onClick={() => console.log("added to the cart")}
-                >
-                  {inCart ? (
-                    <p className="text-capitalized mb-0" disabled></p>
-                  ) : (
-                    <i className="fas fa-plus" />
-                  )}
-                  Add to wishlist
-                </button>
-                <button
-                  className="cart-btn cartBtn"
-                  disabled={inCart ? true : false}
-                  onClick={() => console.log("added to the cart")}
-                >
-                  {inCart ? (
-                    <p className="text-capitalized mb-0" disabled></p>
-                  ) : (
-                    <i className="fas fa-plus" />
-                  )}
-                  Add to Cart
-                </button>
-                {/* CARD FOOTER */}
+                
+                
+                {/* ITEMS DETAILS */}
 
                 <div className="card-footer d-flex justify-content-between">
                   <p className="align-self-center mb-0">{title}</p>
@@ -48,7 +26,31 @@ export default class ItemDisplay extends Component {
                     <span className="mr-1">$</span>
                     {price}
                   </h5>
-                </div>
+              </div>
+              <button
+                className="cart-btn whislistBtn"
+                disabled={inCart ? true : false}
+                onClick={() => console.log("added to the cart")}
+              >
+                {inCart ? (
+                  <p className="text-capitalized mb-0" disabled></p>
+                ) : (
+                    <i className="fas fa-plus" />
+                  )}
+                  Add to wishlist
+                </button>
+              <button
+                className="cart-btn cartBtn"
+                disabled={inCart ? true : false}
+                onClick={() => console.log("added to the cart")}
+              >
+                {inCart ? (
+                  <p className="text-capitalized mb-0" disabled></p>
+                ) : (
+                    <i className="fas fa-plus" />
+                  )}
+                  Add to Cart
+                </button>
               </Link>
             </div>
           </div>

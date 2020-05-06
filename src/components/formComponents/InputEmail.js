@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../accounts/acoounts.css";
 
 function InputEmail(props){
     return (

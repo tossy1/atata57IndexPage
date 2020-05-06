@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-import "../accounts/acoounts.css";
 function InputPhone(props) {
   const [value, setValue] = useState();
   return (

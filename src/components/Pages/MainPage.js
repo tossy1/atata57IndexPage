@@ -1,6 +1,6 @@
 import React from "react";
 import MainHeader from "../header/mainHeader";
-import Simpleslider from "../carousel";
+import Simpleslider from "../carousel/carousel";
 
 import CommodityPrice from "../commodity";
 import Converter from "../Converter";

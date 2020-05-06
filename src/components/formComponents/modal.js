@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../accounts/acoounts.css";
 
 class Modal extends Component {
   render() {
@@ -12,14 +11,5 @@ class Modal extends Component {
     );
   }
 }
-
-// var CloseModal = document.getElementById("modal");
-// var CloseBtn = document.getElementById("close");
-
-// CloseBtn.addEventListener('click', closeB);
-
-// function closeB() {
-//   CloseModal.style.ClassList.add("hidden");
-// }
 
 export default Modal;

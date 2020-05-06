@@ -1,5 +1,4 @@
 import React from "react";
-import "../accounts/acoounts.css";
 
 function InputPassword(props) {
   
