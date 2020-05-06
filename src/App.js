@@ -29,7 +29,7 @@ class App extends Component {
           <Route exact path="/Signin" component={Login} />
           <Route exact path="/Register" component={Register} />
           <Route exact path="/RFQ" component={RFQ} />
-          <Route exact path="/Wishlist" component={Wishlist} />
+          <Route exact path="/Whislist" component={Wishlist} />
           <Route
             exact
             path="/ProductPage"

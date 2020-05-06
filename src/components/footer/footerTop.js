@@ -12,29 +12,8 @@ function footerTop() {
     color: "#fff",
   };
   return (
-    <div style={style}>
-      <Row>
-        <Col xs={3}>
-          <Logo3 />
-        </Col>
-        <Col xs={6}>
-          <h4>New To Atata57.com</h4>
-          <p>
-            Subscribe to our newsletter to get updates on our latest offers!
-          </p>
-          <FormGroup as={Row} style={{ margin: " 5px auto" }}>
-            <Form.Control
-              type="email"
-              placeholder="Enter email"
-              style={{ width: "40%", border: "none" }}
-            />
-            <Button variant="primary" type="submit" style={{ border: "none" }}>
-              Submit
-            </Button>
-          </FormGroup>
-        </Col>
-        <Col xs={3}>Hello@Hello.com</Col>
-      </Row>
+    <div>
+      <p>FooterTop</p>
     </div>
   );
 }

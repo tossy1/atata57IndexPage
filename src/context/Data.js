@@ -2,9 +2,10 @@ export const storeProducts = [
   {
     id: 1,
     title: "Tomato-Bag from Kano",
-    img: "Image/sample 2.png",
+    img: "Image/CateItem1.png",
     price: 20000,
     Seller: "Mohammed",
+    moq: "1 bag",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -17,6 +18,7 @@ export const storeProducts = [
     img: "Image/CateItem3.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "20pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -28,6 +30,7 @@ export const storeProducts = [
     img: "Image/CateItem2.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "20pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -39,6 +42,7 @@ export const storeProducts = [
     img: "Image/CateItem4.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "20pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -50,6 +54,7 @@ export const storeProducts = [
     img: "Image/sample 1.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "20pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -59,8 +64,9 @@ export const storeProducts = [
     id: 6,
     title: "Tomato-Bag from Kano",
     img: "Image/sample 2.png",
-    price: 50000,
+    price: 10000,
     Seller: "Mohammed",
+    moq: "50pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -72,6 +78,7 @@ export const storeProducts = [
     img: "Image/CateItem3.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "20pieces",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -83,6 +90,7 @@ export const storeProducts = [
     img: "Image/CateItem3.png",
     price: 50000,
     Seller: "Mohammed",
+    moq: "1 basket",
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
     inCart: false,
@@ -91,13 +99,14 @@ export const storeProducts = [
 ];
 
 export const detailProduct = {
-  id: 3,
+  id: 1,
   title: "Tomato-Bag from Kano",
   img: "Image/CateItem2.png",
   price: 20000,
-  Seller: "Mohammed",
+  seller: "Mohammed",
   info:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
   inCart: false,
+  count: 0,
   total: 0,
 };
