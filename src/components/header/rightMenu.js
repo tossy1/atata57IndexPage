@@ -9,7 +9,7 @@ function RightMenu() {
   return (
     <>
       <ul class="rightMenu">
-        <Link to="/Wishlist" className="LinkStyle">
+        <Link to="/Whislist" className="LinkStyle">
           <li className="LinkStyle">
             <i class="fa fa-heart"></i>Wishlist
           </li>

@@ -6,6 +6,7 @@
   --colorGreen: #0e8502;
   --colorRed: #ff0000;
   --colorYellow: #ff9900;
+  --colorAsh: #c9c9c9;
 }
 
 * {
@@ -252,7 +253,7 @@ form {
   -webkit-box-shadow: -5px 5px 10px #00000034;
   box-shadow: -5px 5px 10px #00000034;
 }
-
+ 
 .registerMain {
   width: 70%;
   margin: auto;
@@ -413,11 +414,6 @@ form {
 a {
   color: #008600;
   text-decoration: none;
-}
-
-.item-title {
-  font-family: "Fredoka One", cursive;
-  font-size: 1.1rem;
 }
 .arrows {
   position: absolute;
