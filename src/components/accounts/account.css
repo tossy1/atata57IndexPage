@@ -3,6 +3,7 @@
 :root {
   --colorBlack: #1c1c1c;
   --colorLight: #f5f5f5;
+  --colorWhite: #ffffff;
   --colorGreen: #0e8502;
   --colorRed: #ff0000;
   --colorYellow: #ff9900;
@@ -12,13 +13,13 @@
 * {
   margin: 0;
   padding: 0;
-}
+}  
 .container-fluid {
   background-color: #f0f0f0;
 }
 .index-viewed {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  height: 50%;
 }
 
 .commodity .header {
@@ -47,18 +48,6 @@
   color: var(--colorYellow);
 }
 
-.index-viewed .index-slider {
-  width: 90%;
-  margin: auto;
-}
-.Slider-Item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Slider-Item img {
-  width: 50%;
-}
 .ItemCarousel {
   text-align: center;
 }
@@ -260,7 +249,7 @@ form {
   margin-top: 7rem;
   margin-bottom: 50px;
   padding: 20px;
-  background-image: url"../bgImg.png");
+  background-image: (url"../bgImg.png");
   font-family: "Baloo Da 2", cursive;
   -webkit-box-shadow: -5px 5px 10px #00000034;
   box-shadow: -5px 5px 10px #00000034;
@@ -619,21 +608,8 @@ a {
   border: solid 1px #000;
   border-radius: 5px;
 }
-.slick-slider .slick-arrow::before {
-  color: transparent !important;
-}
-.slick-dots {
-  top: 290px;
-}
-.slick-dots li button:before {
-  font-size: 15px !important;
-}
-.slick-dots li.slick-active button:before {
-  color: #008600 !important;
-}
 
 .slider {
-  width: 100%;
   margin: 7px 0;
   background-color: var(--colorLight);
 }
@@ -719,10 +695,10 @@ a {
   .commodity {
     display: none;
   }
-  .slider {
+  /* .slider {
     background-color: transparent;
     margin: 0;
-  }
+  } */
   /* .topAds {
     display: none;
   }

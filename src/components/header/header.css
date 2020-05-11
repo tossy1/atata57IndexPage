@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Fredoka+One&display=swap");
 /*colors */
-:root{
- --colorBlack: #1c1c1c;
- --colorLight: #f5f5f5;
- --colorGreen: #0e8502;
- --colorRed: #ff0000;
-
+:root {
+  --colorBlack: #1c1c1c;
+  --colorLight: #f5f5f5;
+  --colorGreen: #0e8502;
+  --colorRed: #ff0000;
 }
-
-
 
 .MainHeader {
   width: 100%;
@@ -18,7 +15,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Fredoka One", cursive;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
 }
 
@@ -85,6 +82,7 @@
   display: flex;
   padding: 5px;
   margin-left: -30%;
+  font-family: "Muli", sans-serif;
 }
 .headerCenter .contact {
   display: flex;
@@ -149,7 +147,7 @@
   color: var(--colorLight);
   -webkit-box-shadow: 2px 2px 5px #0000002c;
   box-shadow: 2px 2px 5px #0000002c;
-  font-family: "Fredoka One", cursive;
+  font-family: "Muli", sans-serif;
 }
 .headerBottom .on-smScreen {
   display: none;
@@ -244,7 +242,6 @@ nav .MenuBtn.btn.btn-primary:active {
 .Menu {
   width: 20%;
   margin-left: 1rem;
-  font-family: "DM Sans", sans-serif;
   color: #fff;
   background-color: #2b2b2b;
   position: absolute;
@@ -402,5 +399,4 @@ nav .MenuBtn.btn.btn-primary:active {
   }
 }
 @media only screen and (max-width: 980px) {
- 
 }

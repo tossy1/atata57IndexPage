@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { storeProducts, detailProduct } from "./Data";
-import Row from "react-bootstrap/Row"
 
 const ProductContext = React.createContext();
 

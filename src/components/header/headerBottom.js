@@ -75,7 +75,7 @@ function HeaderBottom() {
             <div className="sm-screen-scroll-list">All Categories</div>
             <div className="sm-screen-scroll-list">Top Selling</div>
             <div className="sm-screen-scroll-list">Top Ranking</div>
-            <div className="sm-screen-scroll-list">Feeds</div>
+            <div className="sm-screen-scroll-list">Blog</div>
             <div className="sm-screen-scroll-list">Our Team</div>
             <div className="sm-screen-scroll-list">About Us</div>
             <div className="sm-screen-scroll-list">Services</div>
@@ -88,7 +88,7 @@ function HeaderBottom() {
           </li>
           <li>Top Selling</li>
           <li>Top Ranking</li>
-          <li>Feeds</li>
+          <li>Blog</li>
           <li>Our Team</li>
           <li>About Us</li>
           <li>

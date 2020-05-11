@@ -1,22 +1,25 @@
 import React from "react";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
-
 import CommodityPrice from "../commodity";
+import Nav from "react-bootstrap/Nav";
 import Converter from "../Converter";
 import Container from "react-bootstrap/Container";
+import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Adscategory from "./AdsItems";
-import Adscategory2 from "./AdsItems2";
+import FeaturedLinks from "../Pages/featuredLinks"
 import Footer from "../footer/footer";
 import RFQ from "../rfq";
+import ItemCategory from "../Pages/ItemCategories";
+import AdvertBanner from "../AdvertBanner";
 
 function Page() {
   return (
     <>
       <MainHeader />
-      <div className="index-viewed">
+      <div className="col-12 my-3 index-viewed">
         <Row>
           <div className="col-xs-3 col-lg-3 col-md-0 col-sm-0 Price">
             <CommodityPrice />
@@ -26,16 +29,33 @@ function Page() {
           </div>
         </Row>
       </div>
-      <div className="index-slider">
-        <span> Hello! </span>
+      <div className="col-11 mx-auto my-4">
+        <FeaturedLinks />
+      </div>
+      <div className="col-12 my-5">
+        <div className="col-10 mx-auto my-5">
+          <ItemCategory />
+        </div>
+      </div>
+
+      <AdvertBanner />
+
+      <div className=" index-slider">
         <Adscategory />
       </div>
+
+      <AdvertBanner />
       
-      
-      
-        
+      <div className="col-12 my-5">
+        <div className="col-10 mx-auto my-5">
+          <ItemCategory />
+        </div>
+      </div>
+      <FixedSocialLinks />
     </>
   );
 }
+
+
 
 export default Page;

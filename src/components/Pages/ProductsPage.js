@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../../context/context";
 
