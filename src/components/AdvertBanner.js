@@ -1,8 +1,8 @@
 import React from "react";
 import { Advertisement } from "semantic-ui-react";
 
-const AdvertisementExampleBannerTop = () => (
+const AdvertisementBannerTop = () => (
   <Advertisement unit="billboard" centered test="Banner" />
 );
 
-export default AdvertisementExampleBannerTop;
+export default AdvertisementBannerTop;

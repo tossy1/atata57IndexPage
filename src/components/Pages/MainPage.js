@@ -9,9 +9,10 @@ import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Adscategory from "./AdsItems";
-import FeaturedLinks from "../Pages/featuredLinks"
+import FeaturedLinks from "../Pages/featuredLinks";
+import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
-import RFQ from "../rfq";
+import BottomItem from "../Pages/bottomItem";
 import ItemCategory from "../Pages/ItemCategories";
 import AdvertBanner from "../AdvertBanner";
 
@@ -29,33 +30,30 @@ function Page() {
           </div>
         </Row>
       </div>
-      <div className="col-11 mx-auto my-4">
+      <div className="col-12 mx-auto my-4">
         <FeaturedLinks />
       </div>
-      <div className="col-12 my-5">
-        <div className="col-10 mx-auto my-5">
-          <ItemCategory />
-        </div>
-      </div>
-
-      <AdvertBanner />
-
       <div className=" index-slider">
         <Adscategory />
       </div>
-
-      <AdvertBanner />
-      
       <div className="col-12 my-5">
         <div className="col-10 mx-auto my-5">
           <ItemCategory />
         </div>
       </div>
+
+      <AdvertBanner />
+
+      <div className="col-12 mx-auto my-5">
+        <CategoryLinks />
+      </div>
+      <div className="col-11 mx-auto">
+        <BottomItem />
+      </div>
+      
       <FixedSocialLinks />
     </>
   );
 }
-
-
 
 export default Page;

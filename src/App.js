@@ -16,8 +16,8 @@ import RFQ from "../src/components/Pages/rfq";
 import Wishlist from "../src/components/Pages/wishlist";
 import ProductPage from "./components/Pages/ProductsPage";
 import PreviewPage from "./components/Pages/PreviewPage";
-import AtataCareer from "../src/components/AtataServicesPage/Atata-careerPage"
-import AtataInsurance from "../src/components/AtataServicesPage/Atata-insurancePage"
+import AtataCareer from "../src/components/AtataServicesPage/Atata-careerPage";
+import AtataInsurance from "../src/components/AtataServicesPage/Atata-insurancePage";
 import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsPage";
 import AtataWallet from "../src/components/AtataServicesPage/Atata-walletPage";
 import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";

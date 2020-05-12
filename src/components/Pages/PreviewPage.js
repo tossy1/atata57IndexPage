@@ -34,7 +34,10 @@ function PreviewPage() {
             img2,
             img3,
             info,
-            productImg,
+            productImg1,
+            productImg2,
+            productImg3,
+            productImg4,
             price,
             price2,
             companyInfo,
@@ -203,22 +206,22 @@ function PreviewPage() {
                       <div id="ProductImage" className="mb-4">
                         <p className="title">Product Image</p>
                         <div className="imageContainer">
-                          <img src={productImg} />
+                          <img src={productImg1} />
                         </div>
                         <div className="imageContainer">
-                          <img src={img1} />
+                          <img src={productImg2} />
                         </div>
                         <div className="imageContainer">
-                          <img src={img2} />
+                          <img src={productImg3} />
                         </div>
                         <div className="imageContainer">
-                          <img src={img3} />
+                          <img src={productImg4} />
                         </div>
                         <div className="imageContainer">
-                          <img src={img2} />
+                          <img src={productImg2} />
                         </div>
                         <div className="imageContainer">
-                          <img src={img1} />
+                          <img src={productImg1} />
                         </div>
                       </div>
                       {/* Product Image Ends*/}
