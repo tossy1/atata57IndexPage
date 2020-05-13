@@ -5,9 +5,8 @@ import styled from "styled-components";
 import Form from "react-bootstrap/Form";
 import { Rating } from "semantic-ui-react";
 import Items from "./categoriesItem/RelatedItems";
-
-
-
+import Header from "../header/header";
+import Footer from "../footer/footer";
 
 function PreviewPage() {
   const [validated, setValidated] = useState(false);
@@ -44,11 +43,11 @@ function PreviewPage() {
             inCart,
           } = value.detailProduct;
           return (
-            <div className="container-fluid mt-2 py-5">
-              <div className="col-12">
+            <div className="container-fluid mt-4 py-5">
+              <div className="col-12 mt-5">
                 {/* Product info */}
-                <div className="row">
-                  <div className="col-4 col-md-4">
+                <div className="row mt-5">
+                  <div className="col-4 col-md-4 mt-5">
                     <CartImage>
                       <div className="top-section">
                         <img src={img} id="imageContainer" alt="product" />
@@ -66,7 +65,7 @@ function PreviewPage() {
 
                   {/* Product Text */}
 
-                  <div className="col-5 col-md-5">
+                  <div className="col-5 col-md-5  mt-5">
                     <ProductText>
                       <h1 className="item-title">{title}</h1>
                       <h4 className="text-title muted-text text-uppercase text-mutted mt-3 mb-2">
@@ -149,7 +148,7 @@ function PreviewPage() {
                     </ProductText>
                   </div>
 
-                  <div className="col-3">
+                  <div className="col-3  mt-5">
                     <ContactSeller>
                       <Form
                         noValidate
@@ -345,22 +344,22 @@ function PreviewPage() {
           );
         }}
       </ProductConsumer>
-      <div className="col-12 mx-auto">
-        <RelatedItems>
-          <h2 className=" mt-5"> Related Items</h2>
-          <Items />
-        </RelatedItems>
-      </div>
+      <div className="col-12 mx-auto"></div>
+      <RelatedItems>
+        <h2 className=" mt-5"> Related Items</h2>
+        <Items />
+      </RelatedItems>
+      <Header />
+      <Footer />
     </>
   );
 }
 
-
 const SideContent = styled.div`
-display: flex;
-background-color: var(--colorWhite);
-height: auto;
-`
+  display: flex;
+  background-color: var(--colorWhite);
+  height: auto;
+`;
 const RelatedItems = styled.div`
   h2 {
     font-family: "Bebas Neue", cursive;
