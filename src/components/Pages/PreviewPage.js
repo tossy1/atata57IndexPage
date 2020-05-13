@@ -21,7 +21,6 @@ function PreviewPage() {
 
     setValidated(true);
   };
-
   return (
     <>
       <ProductConsumer>

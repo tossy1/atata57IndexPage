@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default class FeaturedLinks extends Component {
   render() {
     return (
-      <div className="w-100 my-3">
+      <div className="w-100">
         <Links>
           <LinksItem>
             <Link to="/atataPay">
@@ -75,17 +75,21 @@ const Links = styled.div`
   margin: auto;
   background-color: var(--colorLight);
   a {
-    color: var(--colorLight);
+    color: var(--colorBlack);
     text-decoration: none;    
+    :hover{
+      color: var(--colorYellow);
+    }
   }
 `;
 const LinksItem = styled.div`
   width: 100%;
   margin: 7px;
   text-align: center;
-  background-color: var(--colorGreen);
+  background-color: var(--colorAsh);
   :hover{
-    background-color: var(--colorBlack);
+    background-color: var(--colorGreen);
+    color: var(--colorYellow);
   }
 `;
 const LinksTop = styled.div`

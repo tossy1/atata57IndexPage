@@ -9,14 +9,17 @@
 
 .MainHeader {
   width: 100%;
+  position: absolute;
+  top:0;
 }
 .headerTop {
-  background-color: #f5f5f5;
+  background-color: var(--colorGreen);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Muli", sans-serif;
   font-size: 14px;
+  height: 37px;
 }
 
 .headerTop ul {
@@ -31,8 +34,8 @@
 .headerTop ul li select {
   padding: 5px;
   background-color: transparent;
-  border: solid var(--colorBlack) 1px;
-  color: var(--colorBlack);
+  border: solid var(--colorLight) 1px;
+  color: var(--colorLight);
   outline: none;
 }
 .rightMenu {
@@ -48,10 +51,14 @@
 }
 .rightMenu li {
   display: inline;
+  font-size: 11px;
+  padding: 10px 0;
 }
 .rightMenu li i {
   padding-right: 5px;
+  font-size: 22px;
 }
+
 
 .leftMenu {
   margin-left: 5px;
@@ -59,13 +66,12 @@
 }
 
 .LinkStyle {
-  color: var(--colorBlack);
+  color: var(--colorLight);
   text-decoration: none;
 }
 
 .LinkStyle :hover {
-  color: var(--colorLight);
-  background-color: var(--colorGreen);
+  color: var(--colorBlack);
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -77,15 +83,19 @@
 }
 
 .headerCenter {
-  background-color: #d3d1d1;
-  color: #000000;
+  background-color: var(--colorLight);
+  color: var(--colorGreen);
   display: flex;
-  padding: 5px;
+  padding: 0px;
   margin-left: -30%;
   font-family: "Muli", sans-serif;
 }
+.headerCenter img{
+  width: 100px;
+}
 .headerCenter .contact {
   display: flex;
+  font-family: "Muli", sans-serif;
 }
 .headerCenter .contact-details {
   display: flex;
@@ -93,8 +103,7 @@
 }
 .headerCenter .contact-mail {
   margin: auto;
-  margin-top: -17px;
-  font-weight: bold;
+  margin-top: -14px;
 }
 .headerCenter .call-lines {
   display: flex;
@@ -108,7 +117,7 @@
   padding: 15px;
   margin: auto;
   height: 70%;
-  width: 40%;
+  width: 50%;
   display: flex;
 }
 .headerCenter .contact {
@@ -143,23 +152,25 @@
 }
 
 .headerBottom {
-  background-color: var(--colorGreen);
-  color: var(--colorLight);
+  background-color: var(--colorAsh);
+  color: var(--colorBlack);
   -webkit-box-shadow: 2px 2px 5px #0000002c;
   box-shadow: 2px 2px 5px #0000002c;
   font-family: "Muli", sans-serif;
+  display: flex;
 }
 .headerBottom .on-smScreen {
   display: none;
 }
 .headerBottom .On-lgScreen li {
   list-style-type: none;
-  display: inline;
+  display: inline-flex;
   padding: 10px 30px;
 }
 
 .headerBottom li:first-child {
   font-weight: bold;
+  color: var(--colorGreen);
 }
 
 .headerBottom li:hover {
@@ -170,8 +181,8 @@
 }
 
 .headerBottom i {
-  font-size: 17px;
-  padding: 0px 7px;
+  font-size: 20px;
+  padding:0 6px;
 }
 
 a {

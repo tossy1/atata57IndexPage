@@ -11,17 +11,17 @@ function RightMenu() {
       <ul class="rightMenu">
         <Link to="/Whislist" className="LinkStyle">
           <li className="LinkStyle">
-            <i class="fa fa-heart"></i>Wishlist
+            <i class="fa fa-heart"></i>
           </li>
         </Link>
         <Link to="/cart" className="LinkStyle">
           <li>
-            <i class="fas fa-shopping-cart"></i> Cart
+            <i class="fas fa-shopping-cart"></i> 
           </li>
         </Link>
         <Link className="LinkStyle" onClick={() => setShow(true)}>
           <li>
-            <i className="fas fa-user-circle"></i>Account
+            <i className="fas fa-user-circle"></i>
           </li>
           <Modal
             show={show}
@@ -34,7 +34,7 @@ function RightMenu() {
         </Link>
         <Link to="/RFQ" className="LinkStyle">
           <li>
-            <i class="fas fa-file-contract"></i> RFQ
+            <i class="fas fa-file-contract"></i>
           </li>
         </Link>
       </ul>

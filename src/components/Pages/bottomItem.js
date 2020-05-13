@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { ProductConsumer } from "../../context/context";
-
+import NumberFormat from "react-number-format";
 import Item1 from "./categoryImages/accessories.png";
 import Item2 from "./categoryImages/appliance.png";
 import Item3 from "./categoryImages/clothes.png";
@@ -17,14 +17,14 @@ export default class bottomItem extends Component {
     return (
       <ProductConsumer>
         {(value) => {
-          const { id, title, price, price2 } = value.detailProduct;
+          const { id, title, info, price, price2 } = value.detailProduct;
           return (
             <ButtomItems>
               <div
                 className="bottomItems"
                 onClick={() => value.handleDetail(id)}
               >
-                <div className="row mb-3">
+                <div className="row mb-3 py-2">
                   <div className="bottomItem d-flex">
                     <div className="imageContainer ">
                       <img src={Item1} />
@@ -32,8 +32,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -51,8 +66,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -70,8 +100,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -91,8 +136,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -110,8 +170,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -129,8 +204,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -150,8 +240,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -169,8 +274,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -188,67 +308,23 @@ export default class bottomItem extends Component {
                     <div className="details">
                       <span className="title py-2">{title}</span>
                       <span className="price py-2">
-                        {price} - {price2}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />{" "}
+                        -{" "}
+                        <NumberFormat
+                          className={"px-1"}
+                          value={price2}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₦"}
+                        />
                       </span>
-                      <span
-                        className="button"
-                        onClick={() => {
-                          value.addToCart(id);
-                        }}
-                      >
-                        View Product
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="bottomItem d-flex">
-                    <div className="imageContainer ">
-                      <img src={Item6} />
-                    </div>
-                    <div className="details">
-                      <span className="title py-2">{title}</span>
-                      <span className="price py-2">
-                        {price} - {price2}
-                      </span>
-                      <span
-                        className="button"
-                        onClick={() => {
-                          value.addToCart(id);
-                        }}
-                      >
-                        View Product
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bottomItem d-flex">
-                    <div className="imageContainer">
-                      <img src={Item9} />
-                    </div>
-                    <div className="details">
-                      <span className="title py-2">{title}</span>
-                      <span className="price py-2">
-                        {price} - {price2}
-                      </span>
-                      <span
-                        className="button"
-                        onClick={() => {
-                          value.addToCart(id);
-                        }}
-                      >
-                        View Product
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bottomItem d-flex">
-                    <div className="imageContainer">
-                      <img src={Item7} />
-                    </div>
-                    <div className="details">
-                      <span className="title py-2">{title}</span>
-                      <span className="price py-2">
-                        {price} - {price2}
-                      </span>
+
                       <span
                         className="button"
                         onClick={() => {
@@ -277,13 +353,13 @@ const ButtomItems = styled.div`
   .bottomItem {
     background-color: var(--colorWhite);
     margin: auto;
-    margin
+    height: 150px;
+    padding: 15px;
   }
   .imageContainer {
     width: 150px;
     height: 120px;
     overflow: hidden;
-    padding: auto;
     border: solid 0.5px var(--colorAsh);
   }
   .imageContainer img {
@@ -297,14 +373,16 @@ const ButtomItems = styled.div`
   .details {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 8px;
   }
   .title {
     color: var(--colorBlack);
     font-family: "Muli", sans-serif;
     font-size: 16px;
     font-weight: bold;
+    margin: 0 3px;
   }
+
   .price {
     font-family: "Muli", sans-serif;
     font-size: 20px;
@@ -314,11 +392,10 @@ const ButtomItems = styled.div`
   .button {
     padding: 10px;
     text-align: center;
-    background-color: var(--colorYellow);
-    color: var(--colorWhite);
+    color: var(--colorAsh);
     &:hover {
-      background-color: var(--colorBlack);
-      color: var(--colorYellow);
+      background-color: var(--colorYellow);
+      color: var(--colorWhite);
     }
   }
 `;

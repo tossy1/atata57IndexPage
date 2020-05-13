@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../../context/context";
-
+import NumberFormat from "react-number-format";
 export default class ItemDisplay extends Component {
   render() {
     const {
@@ -43,8 +43,23 @@ export default class ItemDisplay extends Component {
                     </p>
                   </Link>
                   <h5 className="price mb-1">
-                    <span className="mr-1">$</span>
-                    {price} - {price2}
+                    <NumberFormat
+                      className={"px-3"}
+                      value={price}
+                      displayType={"text"}
+                      thousandSeparator={true}
+                      prefix={"₦"}
+                    />
+
+                    -
+
+                    <NumberFormat
+                      className={"px-3"}
+                      value={price2}
+                      displayType={"text"}
+                      thousandSeparator={true}
+                      prefix={"₦"}
+                    />
                   </h5>
 
                   <span className="details mt-2 mb-2">{info}</span>
@@ -97,8 +112,8 @@ const ProductWrapper = styled.div`
   .text-align-center {
     text-align: center;
   }
-  .details{
-    font-size:14px;
+  .details {
+    font-size: 14px;
   }
   .title {
     color: var(--colorYellow);
