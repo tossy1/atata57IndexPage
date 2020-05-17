@@ -4,12 +4,8 @@ import "../accounts/account.css"
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
 import CommodityPrice from "../commodity";
-import Nav from "react-bootstrap/Nav";
-import Converter from "../Converter";
-import Container from "react-bootstrap/Container";
 import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Adscategory from "./AdsItems";
 import FeaturedLinks from "../Pages/featuredLinks";
 import CategoryLinks from "./bottomCategoryItems";
@@ -18,7 +14,7 @@ import BottomItem from "../Pages/bottomItem";
 import IndexBlog from "../Pages/IndexBlog";
 import ItemCategory from "../Pages/ItemCategories";
 import AdvertBanner from "../AdvertBanner";
-import AdvertBanner2 from "../AdvertBanner2";
+import { Container } from "semantic-ui-react";
 
 function Page() {
   return (
@@ -37,11 +33,7 @@ function Page() {
       <div className="col-12 mx-auto my-4">
         <FeaturedLinks />
       </div>
-      <div className=" index-slider">
-        <Adscategory />
-      </div>
-      
-
+        <Adscategory />  
      
         <AdvertBanner />
      

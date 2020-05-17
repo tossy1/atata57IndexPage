@@ -19,10 +19,10 @@ export default class ItemDisplay extends Component {
     } = this.props.product;
 
     return (
-      <ProductWrapper className="col-9 mx-auto d-flex col-md-6 col-lg-3 my-3">
-        <div className="card">
-          <ProductConsumer>
-            {(value) => (
+      <ProductWrapper className="col-2 card col-md-2 col-lg-2">
+        <ProductConsumer>
+          {(value) => (
+            <>
               <div
                 className="img-container"
                 onClick={() => value.handleDetail(id)}
@@ -30,50 +30,46 @@ export default class ItemDisplay extends Component {
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
+              </div>
+              <div className="cardFooter">
+                <Link to="/details">
+                  <p
+                    className="title mb-2"
+                    onClick={() => {
+                      value.addToCart(id);
+                    }}
+                  >
+                    {title}
+                  </p>
+                </Link>
+                <span className="details">{info}</span>
+                <h5 className="price">
+                  <NumberFormat
+                    className={"pr-2 priceStyle"}
+                    value={price}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"₦"}
+                  />
+                  -
+                  <NumberFormat
+                    className={"pl-2 priceStyle"}
+                    value={price2}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"₦"}
+                  />
+                  <span className="PriceAdInfo">{"/ Pieces"}</span>
+                </h5>
 
-                <div className="card-footer justify-content-between">
-                  <Link to="/details">
-                    <p
-                      className="align-self-center text-align-center title mb-0"
-                      onClick={() => {
-                        value.addToCart(id);
-                      }}
-                    >
-                      {title}
-                    </p>
-                  </Link>
-                  <h5 className="price mb-1">
-                    <NumberFormat
-                      className={"px-3"}
-                      value={price}
-                      displayType={"text"}
-                      thousandSeparator={true}
-                      prefix={"₦"}
-                    />
-
-                    -
-
-                    <NumberFormat
-                      className={"px-3"}
-                      value={price2}
-                      displayType={"text"}
-                      thousandSeparator={true}
-                      prefix={"₦"}
-                    />
-                  </h5>
-
-                  <span className="details mt-2 mb-2">{info}</span>
-                  <div className="m-2 d-flex">
-                    <span className="info text-align-center moq">
-                      {"( MOQ"} {moq} {")"}
-                    </span>
-                    <span className="text-align-center info ">
-                      {orders} orders
-                    </span>
-                  </div>
-                  <div className="button">
-                    <Link to="/Whislist">
-                      <button
+                <div className="m-2 d-flex mb-4">
+                  <span className="info moq">
+                    {"( MOQ"} {moq} {")"}
+                  </span>
+                </div>
+                <div className="button">
+                  <Link to="/Whislist">
+                    {/* <button
                         className="whislistBtn p-2 mx-2 mb-2"
                         disabled={inCart ? true : false}
                       >
@@ -82,14 +78,13 @@ export default class ItemDisplay extends Component {
                         ) : (
                           <span>Add to wishlist</span>
                         )}
-                      </button>
-                    </Link>
-                  </div>
+                      </button> */}
+                  </Link>
                 </div>
               </div>
-            )}
-          </ProductConsumer>
-        </div>
+            </>
+          )}
+        </ProductConsumer>
       </ProductWrapper>
     );
   }
@@ -97,11 +92,10 @@ export default class ItemDisplay extends Component {
 
 const ProductWrapper = styled.div`
   .card {
-    border-color: transparent;
     transition: all 1s linear;
   }
-  .card-footer {
-    width: 100%;
+
+  .cardFooter {
     background: transparent;
     border-top: transparent;
     white-space: nowrap;
@@ -109,36 +103,39 @@ const ProductWrapper = styled.div`
     text-overflow: ellipsis;
     transition: all 1s linear;
   }
-  .text-align-center {
-    text-align: center;
-  }
   .details {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 4px;
   }
   .title {
-    color: var(--colorYellow);
+    color: var(--colorBlack);
     font-family: "Muli", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
   }
-  .info {
-    color: var(--colorGreen);
-    font-size: 11px;
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-  }
+
   .price {
-    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #000;
     font-family: "Muli", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    margin: 10px auto;
+    text-overflow: ellipsis;
+
+    .priceStyle {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .PriceAdInfo {
+      color: var(--colorAsh);
+      font-weight: 100;
+    }
   }
   .moq {
     font-size: 11px;
     text-align: center;
+    margin: auto;
   }
 
   .cart-btn {
@@ -169,8 +166,13 @@ const ProductWrapper = styled.div`
     }
   }
   .img-container {
-    postiton: relative;
     overflow: hidden;
+    width: 178px;
+    height: 170px;
+  }
+  .img-container img {
+    width: 200px;
+    margin: auto;
   }
   .img-container:hover .card-img-top {
     transform: scale(1.1);

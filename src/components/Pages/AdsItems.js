@@ -5,14 +5,12 @@ import Image from "react-bootstrap/Image";
 import { ProductConsumer } from "../../context/context";
 
 function AdsCategory() {
-  const style = {
-    margin: "20px 0px",
-  };
+ 
   return (
-    <div className="Adscategory" style={style}>
+    <div className="Adscategory">
       <p> Top Selection</p>
       <hr />
-      <Row>
+      <div className="row">
         <ProductConsumer>
           {(product) => {
             return product.products.map((product) => {
@@ -20,7 +18,17 @@ function AdsCategory() {
             });
           }}
         </ProductConsumer>
-      </Row>
+      </div>
+      <div className="row">
+        <ProductConsumer>
+          {(product) => {
+            return product.products.map((product) => {
+              return <Product key={product.id} product={product} />;
+            });
+          }}
+        </ProductConsumer>
+      </div>
+      
     </div>
   );
 }
