@@ -9,23 +9,11 @@ export default class FeaturedLinks extends Component {
         <Links>
           <LinksItem>
             <Link to="/atataPay">
-              <LinksTop>
-                <i class="fas fa-money-check"></i>
-              </LinksTop>
-            </Link>
-
-            <Link to="/atataPay">
               <LinksBottom>Atata Pay</LinksBottom>
             </Link>
           </LinksItem>
 
           <LinksItem>
-            <Link to="/atataInsurance">
-              <LinksTop>
-                <i class="fas fa-house-damage"></i>
-              </LinksTop>
-            </Link>
-
             <Link to="/atataInsurance">
               <LinksBottom>Atata Insurance</LinksBottom>
             </Link>
@@ -33,34 +21,17 @@ export default class FeaturedLinks extends Component {
 
           <LinksItem>
             <Link to="/atataLogistics">
-              <LinksTop>
-                <i class="fas fa-shipping-fast"></i>
-              </LinksTop>
-            </Link>
-
-            <Link to="/atataLogistics">
               <LinksBottom>Atata Logistics</LinksBottom>
             </Link>
           </LinksItem>
 
           <LinksItem>
             <Link to="/atataWarehouse">
-              <LinksTop>
-                <i class="fas fa-warehouse"></i>
-              </LinksTop>
-            </Link>
-            <Link to="/atataWarehouse">
               <LinksBottom>Atata Warehouse</LinksBottom>
             </Link>
           </LinksItem>
 
           <LinksItem>
-            <Link to="/atataWallet">
-              <LinksTop>
-                <i class="fas fa-wallet"></i>
-              </LinksTop>
-            </Link>
-
             <Link to="/atataWallet">
               <LinksBottom>Atata Wallet</LinksBottom>
             </Link>
@@ -78,7 +49,7 @@ const Links = styled.div`
     color: var(--colorBlack);
     text-decoration: none;    
     :hover{
-      color: var(--colorYellow);
+      color: var(--colorWhite);
     }
   }
 `;

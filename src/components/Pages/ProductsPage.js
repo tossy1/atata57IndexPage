@@ -69,16 +69,16 @@ export default class ItemDisplay extends Component {
                 </div>
                 <div className="button">
                   <Link to="/Whislist">
-                    {/* <button
+                    <button
                         className="whislistBtn p-2 mx-2 mb-2"
                         disabled={inCart ? true : false}
                       >
                         {inCart ? (
                           <p className="text-capitalized mb-0" disabled></p>
                         ) : (
-                          <span>Add to wishlist</span>
+                          <span>View in Cart</span>
                         )}
-                      </button> */}
+                      </button>
                   </Link>
                 </div>
               </div>
