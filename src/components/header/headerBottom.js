@@ -30,35 +30,7 @@ function HeaderBottom() {
     var submenu = document.getElementById("subMenu");
     submenu.classList.add("hidden");
   }
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 980,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+ 
   return (
     <>
       <nav className="headerBottom navbar sticky-top">
@@ -71,16 +43,7 @@ function HeaderBottom() {
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
-          <Slider {...settings} className="slider">
-            <div className="sm-screen-scroll-list">All Categories</div>
-            <div className="sm-screen-scroll-list">Top Selling</div>
-            <div className="sm-screen-scroll-list">Top Ranking</div>
-            <div className="sm-screen-scroll-list">Blog</div>
-            <div className="sm-screen-scroll-list">Our Team</div>
-            <div className="sm-screen-scroll-list">About Us</div>
-            <div className="sm-screen-scroll-list">Services</div>
-            <div className="sm-screen-scroll-list">Commodity Price</div>
-          </Slider>
+         
         </div>
         <div className="On-lgScreen">
           <li onMouseOver={handleOver}>

@@ -26,6 +26,7 @@
     "react-select-currency": "^1.0.7",
     "react-slick": "^0.25.2",
     "react-star-rating": "^1.4.2",
+    "react-toolbox": "^2.0.0-beta.13",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
     "slick-carousel": "^1.8.1",

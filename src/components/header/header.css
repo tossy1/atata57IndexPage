@@ -11,6 +11,8 @@
   width: 100%;
   position: absolute;
   top:0;
+  background-color: var(--colorLight);
+  border-bottom:solid 1px var(--colorAsh);
 }
 .headerTop {
   background-color: var(--colorGreen);
@@ -35,7 +37,7 @@
   padding: 5px;
   background-color: transparent;
   border: solid var(--colorLight) 1px;
-  color: var(--colorLight);
+  color: #0000002a;
   outline: none;
 }
 .rightMenu {
