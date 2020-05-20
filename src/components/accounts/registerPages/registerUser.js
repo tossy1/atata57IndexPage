@@ -1,10 +1,25 @@
 import React, { Component } from "react";
+import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
+
 import Header from "../../header/header";
 import Footer from "../../footer/footer";
 import styled from "styled-components";
 
 export default class UserReg extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { country: '', region: '' };
+  }
+
+  selectCountry(val) {
+    this.setState({ country: val });
+  }
+
+  selectRegion(val) {
+    this.setState({ region: val });
+  }
   render() {
+    const { country, region } = this.state;
     return (
       <>
         <Register>
@@ -24,12 +39,13 @@ export default class UserReg extends Component {
                 <input type="number" placeholder="Phone number" />
               </div>
               <div className="d-flex">
-                <select
-                  class="selectpicker countrypicker"
-                  data-flag="true"
-                ></select>
-                <input type="text" placeholder="Middle Name" />
-                <input type="text" placeholder="Last Name" />
+                <CountryDropdown
+                  value={country}
+                  onChange={(val) => this.selectCountry(val)} />
+                <RegionDropdown
+                  country={country}
+                  value={region}
+                  onChange={(val) => this.selectRegion(val)} />
               </div>
             </div>
           </div>

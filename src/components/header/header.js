@@ -29,13 +29,19 @@ function Header() {
             <button>Search</button>
           </div>
           <div className=" clicks d-flex">
-            <p>
-              <i class="far fa-user"></i>Login
-            </p>
+            <Link to="/SignIn">
+              <p>
+                <i class="far fa-user"></i>Login
+              </p>
+            </Link>
+            <Link to="/Cart">
             <p>
               <i class="fas fa-shopping-cart"></i>Cart
             </p>
-            <p>RFQ</p>
+            </Link>
+            <Link to="/RFQ">
+              <p>RFQ</p>
+            </Link>
           </div>
         </div>
       </HeaderWrap>
@@ -45,6 +51,13 @@ function Header() {
 
 const HeaderWrap = styled.div`
   padding: 6px 2rem;
+  a{
+    color: var(--colorBlack);
+    :hover{
+      transition: all linear 0.3s;
+      color: var(--colorGreen);
+    }
+  }
   .search {
     width: 50%;
     input {
@@ -82,7 +95,7 @@ const HeaderWrap = styled.div`
       font-family: "Muli", sans-serif;
       font-weight: bold;
       font-size: 18px;
-      i{
+      i {
         padding: 5px;
       }
     }
