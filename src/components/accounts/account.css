@@ -233,10 +233,7 @@ form {
   margin-top: 7rem;
   margin-bottom: 50px;
   padding: 20px;
-  background-image: (url "../bgImg.png");
   font-family: "Baloo Da 2", cursive;
-  -webkit-box-shadow: -5px 5px 10px #00000034;
-  box-shadow: -5px 5px 10px #00000034;
 }
 .signH,
 .regH {
