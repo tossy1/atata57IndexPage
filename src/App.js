@@ -22,6 +22,11 @@ import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsP
 import AtataWallet from "../src/components/AtataServicesPage/Atata-walletPage";
 import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";
 import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
+import TopSelling from "./components/Pages/TopSelling"
+import Blog from "./components/Pages/Blog"
+
+
+
 
 class App extends Component {
   render() {
@@ -36,6 +41,8 @@ class App extends Component {
         <Route exact path="/Whislist" component={Wishlist} />
         <Route exact path="/ProductPage" component={ProductPage} />
         <Route exact path="/Details" component={PreviewPage} />
+        <Route exact path="/TopSelling" component={TopSelling} />
+        <Route exact path="/Blog" component={Blog} />
         <Route exact path="/IndividualRegistration" component={RegisterUser} />
         <Route exact path="/atataPay" component={AtataPay} />
         <Route exact path="/atataWallet" component={AtataWallet} />

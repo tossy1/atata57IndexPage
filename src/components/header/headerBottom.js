@@ -30,33 +30,35 @@ function HeaderBottom() {
     var submenu = document.getElementById("subMenu");
     submenu.classList.add("hidden");
   }
- 
+
   return (
     <>
-      <nav className="headerBottom navbar sticky-top">
-        <div className="on-smScreen">
-          <div className="arrows">
-            <div className="arrow-left">
-              <i class="fas fa-angle-left"></i>
-            </div>
-            <div className="arrow-right">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-         
-        </div>
+      <nav className="headerBottom navbar">
         <div className="On-lgScreen">
           <li onMouseOver={handleOver}>
             All Categories <i class="fas fa-bars"></i>
           </li>
-          <li>Top Selling</li>
-          <li>Top Ranking</li>
-          <li>Blog</li>
-          <li>Our Team</li>
-          <li>About Us</li>
           <li>
-            Services
-            <i className="fas fa-angle-down" />
+            <Link to="/TopSelling">Top Selling</Link>
+          </li>
+          <li>
+            <Link to="/TopSelling">Top Ranking</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="/Blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/TopSelling">Our Team</Link>
+          </li>
+          <li>
+            <Link to="/TopSelling">About Us</Link>
+          </li>
+          <li>
+            <Link to="Services">
+              Services
+              <i className="fas fa-angle-down" />
+            </Link>
           </li>
         </div>
       </nav>
