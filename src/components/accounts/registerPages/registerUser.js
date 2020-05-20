@@ -39,7 +39,7 @@ export default class UserReg extends Component {
               <div className="form-group d-flex">
                 <input type="email" placeholder="Email" />
                 <input type="email" placeholder="Retype-email" />
-                <input type="number" placeholder="Phone number" />
+                <input type="text" placeholder="Phone number" />
               </div>
               <div className="form-group d-flex">
                 <i className=" fas fa-globe"></i>
@@ -80,6 +80,10 @@ const Register = styled.div`
     margin-top:10rem;
     margin-bottom: 5rem;
   }
+  hr{
+    width:100%;
+    margin-bottom:25px;
+  }
   h3 {
     color: var(--colorAsh);
     font-size: 30px;
@@ -89,7 +93,7 @@ const Register = styled.div`
     margin: 20px auto;
     i{
       position: absolute;
-      top: 375px;
+      top: 402px;
       left: 250px;
       font-size: 17px;
       color:var(--colorAsh);
