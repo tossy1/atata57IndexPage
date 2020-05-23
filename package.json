@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
     "bootstrap-select": "^1.13.13",
+    "elegant-icons": "0.0.1",
     "primereact": "^4.2.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
