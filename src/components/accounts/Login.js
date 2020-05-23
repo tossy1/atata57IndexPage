@@ -2,49 +2,45 @@ import React from "react";
 import "../accounts/account.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Header from "../header/header"
-import Footer from "../footer/footer"
+import Header from "../header/header";
+import Footer from "../footer/footer";
 
 function Login() {
-  
   return (
     <>
-      
-    <LoginDiv>
-      <div className="form">
-        <form>
-          <p> Login</p>
-          <div className="form-group">
-            <input type="text" placeholder="Username" />
-          </div>
-          <div className="form-group">
-            <input type="Password" placeholder="Password" />
-          </div>
-          <div className="form-group d-flex">
-            <label class="container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-              Remember Me
-            </label>
-            <div>
-              <span>Forgot?</span>
+      <LoginDiv>
+        <div className="form">
+          <form>
+            <p> Login</p>
+            <div className="form-group">
+              <input type="text" placeholder="Username" />
             </div>
-          </div>
-          <div className="button">
-            <button className="button">Login</button>
-          </div>
-        </form>
-      </div>
-      <hr className="mb-2" />
-      <div className="registerLink mb-5">
-        <span>
-          Already have an account? <Link to="/Register">Register</Link>
-        </span>
-      </div>
+            <div className="form-group">
+              <input type="Password" placeholder="Password" />
+            </div>
+            <div className="form-group d-flex">
+              <label class="container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+                Remember Me
+              </label>
+              <div>
+                <span>Forgot?</span>
+              </div>
+            </div>
+            <div className="button">
+              <button className="button">Login</button>
+            </div>
+          </form>
+        </div>
+        <hr className="mb-2" />
+        <div className="registerLink mb-5">
+          <span>
+            Already have an account? <Link to="/Register">Register</Link>
+          </span>
+        </div>
       </LoginDiv>
-      <Header />
-    <Footer />
-      </>
+    </>
   );
 }
 
@@ -54,8 +50,8 @@ const LoginDiv = styled.div`
 
   .registerLink {
     text-align: center;
-    a{
-      color:var(--colorGreen);
+    a {
+      color: var(--colorGreen);
     }
   }
   .form {
