@@ -4,7 +4,6 @@ import {
   RegionDropdown,
   CountryRegionData,
 } from "react-country-region-selector";
-
 import Header from "../../header/header";
 import Footer from "../../footer/footer";
 import styled from "styled-components";
@@ -63,7 +62,6 @@ export default class UserReg extends Component {
               <button>Proceed</button>
             </div>
           </div>
-         
         </Register>
 
         <Header />

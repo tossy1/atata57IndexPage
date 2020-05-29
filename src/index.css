@@ -1,14 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
 }
 /* 
 global use */
 
-.hidden{
-  display:none;
-}
-body{
-    font-family: 'Noto Sans JP', sans-serif;
+.hidden {
+  display: none;
 }
