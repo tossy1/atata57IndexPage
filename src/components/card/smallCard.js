@@ -46,7 +46,7 @@ const ItemCard = styled.div`
   margin-top: 6rem;
   margin: auto;
   width: 270px;
-  height: 320px;
+  height: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
