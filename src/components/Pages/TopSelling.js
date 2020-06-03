@@ -5,7 +5,6 @@ import styled from "styled-components";
 import ItemCards from "../card/card";
 import ItemCardsSm from "../card/smallCard";
 import CategoryCard from "../card/categoryCard";
-import NumberFormat from "react-number-format";
 import Img1 from "../Pages/categoryImages/clothes.png";
 import Img2 from "../Pages/categoryImages/Computer.png";
 import Img3 from "../Pages/categoryImages/Furniture.png";
@@ -16,6 +15,9 @@ import Img7 from "../Pages/categoryImages/shoes.png";
 import Img8 from "../Pages/categoryImages/appliance.png";
 import Img9 from "../Pages/categoryImages/accessories.png";
 import Img10 from "../Pages/categoryImages/Computer.png";
+import Grouped from "../card/groupedCard";
+import Grouped1 from "../card/groupedCardWithLocation";
+import Deals from "../card/LatestDeals";
 
 class TopSelling extends Component {
   render() {
@@ -43,6 +45,13 @@ class TopSelling extends Component {
               amount2="20000"
             />
             <CategoryCard />
+            <div className="d-flex">
+              <Grouped />
+              <Grouped1 />
+            </div>
+            <div className="d-flex">
+              <Deals />
+            </div>
           </div>
         </div>
       </>
