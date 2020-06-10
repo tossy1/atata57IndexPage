@@ -35,7 +35,7 @@ function Page() {
      
       <div className="col-12 my-5">
         <div className="col-10 mx-auto my-5">
-          <ItemCategory />
+         
         </div>
       </div>
 

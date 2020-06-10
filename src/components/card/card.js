@@ -40,7 +40,7 @@ function ItemCards(props) {
         </p>
       </div>
       <div className="footer">
-        <Link to="/" className="show">
+        <Link to="/productPage" className="show">
           <p>Show Details</p>
         </Link>
         <Link to="/cart" className="btn">
@@ -53,16 +53,16 @@ function ItemCards(props) {
 
 const ItemCard = styled.div`
   background-color: var(--colorWhite);
-  margin-top: 6rem;
-  margin:auto;
-  width: 270px;
-  height: 360px;
+  margin: 0 7px;
+  width: 250px;
+  height: 320px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  box-shadow: 0px 0px 50px #00000015;
+  box-shadow: 2px 5px 50px #00000019;
   padding: 10px;
   border: solid 0.5px transparent;
+  border-radius: 5px;
   :hover {
     transition: 0.3s;
     border: solid 0.5px var(--colorAsh);
@@ -90,24 +90,25 @@ const ItemCard = styled.div`
     }
   }
   .image-container {
-    width: 250px;
+    width: 200px;
     margin: auto;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
     align-content: center;
     justify-content: center;
     align-item: center;
     img {
-      width: 250px;
+      width: 200px;
       margin: auto;
-      height: 200px;
+      height: 150px;
     }
   }
   .amount {
     text-align: center;
+    color: var(--colorDark);
     span {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 700;
     }
   }
   .details {
@@ -126,7 +127,7 @@ const ItemCard = styled.div`
     background-color: var(--colorLight);
     .btn {
       background-color: var(--colorYellow);
-      color: var(--colorBlack);
+      color: var(--colorWhite);
       width: 50%;
       font-size: 15px;
     }
