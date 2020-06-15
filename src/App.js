@@ -24,6 +24,7 @@ import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehouseP
 import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
 import TopSelling from "./components/Pages/TopSelling"
 import Blog from "./components/Pages/Blog"
+import Checkout from "./components/Pages/Checkout"
 
 
 
@@ -49,6 +50,7 @@ class App extends Component {
         <Route exact path="/atataWarehouse" component={AtataWarehouse} />
         <Route exact path="/atataLogistics" component={AtataLogistics} />
         <Route exact path="/atataInsurance" component={AtataInsurance} />
+        <Route exact path="/checkout" component={Checkout} />
 
         <Route component={NotFound} />
       </Switch>

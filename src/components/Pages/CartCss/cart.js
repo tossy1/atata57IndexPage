@@ -114,9 +114,11 @@ function Cart() {
                       <button className="gray_btn mr-2" href="#">
                         Continue Shopping
                       </button>
-                      <button className="proceedBtn" href="#">
+                      <Link to="/checkout">
+                      <button className="proceedBtn">
                         Proceed to checkout
                       </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>

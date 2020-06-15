@@ -12,7 +12,7 @@ function Title(props){
 
 const TitleTag = styled.div`
 margin: 10px;
-padding-top: 10%;
+padding-top: 8%;
 padding-left: 5%;
 font-size: 30px;
 text-transform: uppercase;
