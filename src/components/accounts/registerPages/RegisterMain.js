@@ -35,7 +35,7 @@ class Register extends Component {
           >
             <p>
               Already have an account?
-              <Link to="/Signin">
+              <Link to="/SignIn">
                 <span>Signin</span>
               </Link>
             </p>

@@ -22,12 +22,9 @@ import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsP
 import AtataWallet from "../src/components/AtataServicesPage/Atata-walletPage";
 import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";
 import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
-import TopSelling from "./components/Pages/TopSelling"
-import Blog from "./components/Pages/Blog"
-import Checkout from "./components/Pages/Checkout"
-
-
-
+import TopSelling from "./components/Pages/TopSelling";
+import Blog from "./components/Pages/Blog";
+import Checkout from "./components/Pages/Checkout";
 
 class App extends Component {
   render() {
@@ -36,7 +33,7 @@ class App extends Component {
         <Route exact path="/" component={Page} />
         <Route exact path="/MyAccount" component={MainScreen} />
         <Route exact path="/cart" component={Cart} />
-        <Route exact path="/Signin" component={Login} />
+        <Route exact path="/SignIn" component={Login} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/RFQ" component={RFQ} />
         <Route exact path="/Whislist" component={Wishlist} />

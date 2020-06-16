@@ -14,18 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import logo from "../logoComponents/headerLogo.png";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -62,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
       color:"var(--colorGreen)",
     }
   },
+  text: {
+fontSize: "30px",
+  },
   submit: {
     margin: theme.spacing(3, 0, 2),
     padding: "10px",
@@ -84,7 +76,7 @@ export default function SignIn() {
       <CssBaseline />
       <div className={classes.paper}>
           <img src={logo} />
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" className={classes.text} variant="h5">
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
