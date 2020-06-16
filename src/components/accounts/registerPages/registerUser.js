@@ -7,12 +7,14 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import logo from "../../logoComponents/headerLogo.png";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { green } from "@material-ui/core/colors";
+import CheckIcon from "@material-ui/icons/Check";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -24,9 +26,13 @@ const useStyles = makeStyles((theme) => ({
       width: "80px",
     },
   },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+  buttonProgress: {
+    color: green[500],
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    marginTop: 206,
+    marginLeft: -12,
   },
   form: {
     width: "100%", // Fix IE 11 issue.
@@ -59,7 +65,30 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp() {
   const classes = useStyles();
+ const [loading, setLoading] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
+  const timer = React.useRef();
 
+  const buttonClassname = clsx({
+    [classes.buttonSuccess]: success,
+  });
+
+  React.useEffect(() => {
+    return () => {
+      clearTimeout(timer.current);
+    };
+  }, []);
+
+  const handleButtonClick = () => {
+    if (!loading) {
+      setSuccess(false);
+      setLoading(true);
+      timer.current = setTimeout(() => {
+        setSuccess(true);
+        setLoading(false);
+      }, 10000);
+    }
+  };
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -132,15 +161,22 @@ export default function SignUp() {
               />
             </Grid>
           </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
-          </Button>
+          <div className={classes.wrapper}>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              disabled={loading}
+              onClick={handleButtonClick}
+              className={classes.submit}
+            >
+              Sign Up
+            </Button>
+            {loading && (
+              <CircularProgress size={28} className={classes.buttonProgress} />
+            )}
+          </div>
           <Grid container justify="flex-end">
             <Grid item>
               <Link href="/SignIn" variant="body2">
