@@ -1,18 +1,28 @@
 import React from 'react'
 import { Tab } from 'semantic-ui-react'
+import "./dashboard.css"
+import { Loader, Paragraph } from 'rsuite';
 
 const panes = [
-  { menuItem: 'Tab 1', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
-  { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
-  { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+  {
+    menuItem: 'Main', render: () => <Tab.Pane>
+      <Paragraph rows={8}>
+        <Loader size="md" center content="loading" />
+      </Paragraph>
+  </Tab.Pane> },
+  { menuItem: 'Blog', render: () => <Tab.Pane></Tab.Pane> },
+  { menuItem: 'Placeholder', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 ]
 
-const TabExampleMenuPositionLeft = () => (
-  <Tab
-    menu={{ fluid: true, vertical: true }}
-    menuPosition='left'
-    panes={panes}
-  />
-)
+function Dashboard() {
+  return (
+    <Tab
+      menu={{ fluid: true, vertical: true }}
+      menuPosition='left'
+      panes={panes}
+    />
+  )
 
-export default TabExampleMenuPositionLeft
+};
+
+export default Dashboard;
