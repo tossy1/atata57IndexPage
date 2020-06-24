@@ -9,6 +9,7 @@ import Page from "../src/components/Pages/MainPage";
 import NotFound from "./components/Pages/pageNotFound/PageNotFound";
 import MainScreen from "../src/components/accounts/mainScreen";
 import Login from "../src/components/accounts/Login";
+import AdminLogin from "../src/components/admin/adminlogin";
 import Register from "../src/components/accounts/registerPages/RegisterMain";
 import RegisterUser from "../src/components/accounts/registerPages/registerUser";
 import Cart from "./components/Pages/CartCss/cart";
@@ -23,8 +24,9 @@ import AtataWallet from "../src/components/AtataServicesPage/Atata-walletPage";
 import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";
 import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
 import TopSelling from "./components/Pages/TopSelling";
-import Blog from "./components/Pages/Blog";
+import Blog from "./components/blog/Blog";
 import Checkout from "./components/Pages/Checkout";
+import AdminDashboard from "./components/admin/dashboard";
 
 class App extends Component {
   render() {
@@ -34,6 +36,8 @@ class App extends Component {
         <Route exact path="/MyAccount" component={MainScreen} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/SignIn" component={Login} />
+        <Route exact path="/AdminLogin" component={AdminLogin} />
+        <Route exact path="/AdminDashboard" component={AdminDashboard} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/RFQ" component={RFQ} />
         <Route exact path="/Whislist" component={Wishlist} />
@@ -46,8 +50,8 @@ class App extends Component {
         <Route exact path="/atataWallet" component={AtataWallet} />
         <Route exact path="/atataWarehouse" component={AtataWarehouse} />
         <Route exact path="/atataLogistics" component={AtataLogistics} />
-        <Route exact path="/atataInsurance" component={AtataInsurance} />
-        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/atataInsurance" component={AtataInsurance} /> 
+     <Route exact path="/checkout" component={Checkout} />
 
         <Route component={NotFound} />
       </Switch>
